@@ -66,13 +66,10 @@ def parse_bcb_date(date_text: str) -> datetime | None:
     if not date_text:
         return None
     
-    # Normalize whitespace
-    date_text = " ".join(date_text.split())
+    # Normalize whitespace and clean commas
+    date_text = " ".join(str(date_text).replace(",", "").split())
     
-    # Regex to capture: Day (1-2 digits), Month (letters), Year (4 digits)
-    # Handles optional "de" (e.g., "15 de marzo de 2023" or "15 marzo 2023")
     match = re.search(r"(\d{1,2})\s+(?:de\s+)?(\w+)\s+(?:de\s+)?(\d{4})", date_text, re.IGNORECASE)
-    
     if not match:
         return None
 
@@ -80,7 +77,12 @@ def parse_bcb_date(date_text: str) -> datetime | None:
     month = SPANISH_MONTHS.get(month_text.lower().strip())
     
     if month:
-        return datetime(int(year), month, int(day))
+        try:
+            return datetime(int(year), month, int(day))
+        except ValueError:
+            # Handles invalid dates like Feb 30 or Dec 32
+            return None
+            
     return None
 
 def extract_pdf_text(pdf_url: str) -> str:
