@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+pdfplumber
+pandas
+numpy
+transformers
+torch
+pytest
