@@ -25,6 +25,7 @@ SPANISH_MONTHS = {
     "noviembre": 11, "diciembre": 12,
 }
 
+# Data collection
 def download_official_exchange_rate() -> Path:
     """
     Downloads the historical official/reference exchange rate series from the BCB.
@@ -218,13 +219,48 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
             
     return results
 
+# Deduplication functions
+def normalize_text(text: str) -> str:
+    """Normalizes string for robust comparison."""
+    if not text:
+        return ""
+    text = text.lower().strip()
+    text = re.sub(r'\s+', ' ', text)
+    return text
+
+def deduplicate_communications(raw_items: list) -> list:
+    """
+    Deduplicates raw scraped communications by canonical URL or (date + normalized title).
+    Prefers 'notas-prensa' if duplicate types exist (due to reverse sorting).
+    """
+    seen_keys = set()
+    unique_items = []
+    
+    # Sort to prioritize 'notas-prensa' if desired, or keep first occurrence
+    sorted_items = sorted(raw_items, key=lambda x: x.get('type', ''), reverse=True)
+    
+    for item in sorted_items:
+        # Generate canonical deduplication key
+        pdf_url = item.get('pdf_url', '').strip()
+        date = item.get('date', '').strip()
+        title_norm = normalize_text(item.get('title', ''))
+        
+        dedup_key = pdf_url if pdf_url else f"{date}::{title_norm}"
+        
+        if dedup_key not in seen_keys:
+            seen_keys.add(dedup_key)
+            unique_items.append(item)
+            
+    return unique_items
+
+# Main pipeline
 def run_collection(start_date: datetime = datetime(2023, 6, 29)):
     """
     Main execution function to orchestrate the data collection pipeline.
     """
-    print("=" * 50)
+    print("=" * 60)
     print("Starting BCB Data Collection Pipeline")
-    print("=" * 50)
+    print("=" * 60)
     
     print("\n1. Downloading official exchange rate series...")
     download_official_exchange_rate()
@@ -238,7 +274,7 @@ def run_collection(start_date: datetime = datetime(2023, 6, 29)):
         json.dump(communications, f, ensure_ascii=False, indent=2)
         
     print(f"\n✓ Pipeline Complete: {len(communications)} documents saved to {output_path}")
-    print("=" * 50)
+    print("=" * 60)
 
 if __name__ == "__main__":
     run_collection(start_date=datetime(2023, 6, 29))
