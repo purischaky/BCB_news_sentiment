@@ -6,3 +6,5 @@ numpy
 transformers
 torch
 pytest
+matplotlib
+seaborn
