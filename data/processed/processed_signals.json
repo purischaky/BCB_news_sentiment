@@ -1,0 +1,2054 @@
+[
+  {
+    "title": "Audiencia Rendición de Cuentas Inicial 2026",
+    "date": "2026-05-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/Rendicio%CC%81n%20de%20cuentas%20inicial%20abril%202026.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5174,
+    "is_hawkish": true
+  },
+  {
+    "title": "BCB ALERTA SOBRE INTENTOS DE ROBO DE INFORMACIÓN Y ESTAFASBCB ALERTA SOBRE INTENTOS DE ROBO DE INFORMACIÓN Y ESTAFAS",
+    "date": "2026-04-09",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/COMUNICADO%20C3%202026%20DEL%20BCB.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.4744,
+    "is_hawkish": false
+  },
+  {
+    "title": "REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-03-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/5marb26%20C2%20Revocatoria%20%28002%29%20%281%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.48,
+    "is_hawkish": false
+  },
+  {
+    "title": "Difusión de Resultados de la Subasta 9/2026 (Publicación OMA)",
+    "date": "2026-02-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/Publicaci%C3%B3n%20OMA%209-2026%20%283%29.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.6296,
+    "is_hawkish": true
+  },
+  {
+    "title": "REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-02-11",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/11feb26%20C1%20Revocatoria%20%282%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4091,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL ACLARA EL ALCANCE DEL REFINANCIAMIENTO OTORGADO AL TESORO GENERAL DE LA NACIÓN",
+    "date": "2026-02-06",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/6feb26%20CP%206%20Refinanciamiento%20%281%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.591,
+    "is_hawkish": false
+  },
+  {
+    "title": "ADMINISTRACIÓN DE LAS RESERVAS INTERNACIONALES AL TERCER CUATRIMESTRE DE 2025",
+    "date": "2026-02-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/5feb26%20CP%205%20RI%20%282%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.334,
+    "is_hawkish": false
+  },
+  {
+    "title": "COMUNICADO - REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-02-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/2feb26%20CP%204%20Revocatorias%20OK.PDF",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4466,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DEVUELVE LOS DEPÓSITOS EN DÓLARES A PEQUEÑOS AHORRISTAS DEL SISTEMA FINANCIERO NACIONAL",
+    "date": "2026-01-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/26ene26%20CP3%20Devoluci%C3%B3n%20d%C3%B3lares%20ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5484,
+    "is_hawkish": true
+  },
+  {
+    "title": "Difusión de resultados de la subasta 4/2026, publicación OMA",
+    "date": "2026-01-22",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/subasta_22.01.26%20web.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4346,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB REMITE A LA ASAMBLEA EL INFORME SOBRE OPERACIONES CON RESERVAS DE ORO AL TERCER CUATRIMESTRE DE 2025",
+    "date": "2026-01-20",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2002%20Informe%20reservas%20oro%20OK%20%28004%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4057,
+    "is_hawkish": false
+  },
+  {
+    "title": "PRESIDENTE Y DIRECTORIO DEL BANCO CENTRAL DE BOLIVIA RECIBEN LA VISITA DEL PRESIDENTE Y LA VICEPRESIDENTA DEL BID",
+    "date": "2026-01-13",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/NP%202V%20VISITA%20BID%2012ene26.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3156,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB RATIFICA LA VIGENCIA DEL VALOR REFERENCIAL DEL DÓLAR ESTADOUNIDENSE",
+    "date": "2026-01-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP01%2005.01.25_0.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.599,
+    "is_hawkish": true
+  },
+  {
+    "title": "EJECUCIÓN DE LA II REVISIÓN DEL PROGRAMA FISCAL FINANCIERO 2025 SE MANTIENE DENTRO DE LOS LÍMITES ESTABLECIDOS",
+    "date": "2025-12-31",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/NP%2060%20Publicaci%C3%B2n%20Metas%20PFF%20OK%20%28004%29%20%28002%29.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3258,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PUBLICA EL CALENDARIO ANTICIPADO DE DIVULGACIÓN DE DATOS Y MARCA UN HITO EN EL ACCESO A LA INFORMACIÓN PARA 2026",
+    "date": "2025-12-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2059%20Publicaci%C3%B2n%20CAD%20%281%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4607,
+    "is_hawkish": false
+  },
+  {
+    "title": "POSESIONAN AL NUEVO CONSEJO DE LA FUNDACIÓN CULTURAL DEL BCB",
+    "date": "2025-12-22",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2058%20Nuevos%20consejeros%20FCBCB%20%28002%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5446,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB PRESENTA EL DIAGNÓSTICO DE LAS RIN Y EL PROGRAMA FISCAL FINANCIERO, LA REORIENTACIÓN DE LA POLÍTICA CAMBIARIA Y EL RESTABLECIMIENTO DEL ACCESO A LA INFORMACIÓN",
+    "date": "2025-12-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2057%20Evaluaci%C3%B3n%20BCB%20OK.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.8872,
+    "is_hawkish": true
+  },
+  {
+    "title": "EL BCB PUBLICA EL VALOR REFERENCIAL DEL DÓLAR ESTADOUNIDENSE",
+    "date": "2025-12-01",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/COMUNICADO%20DE%20PRENSA%20BCB_DIC_ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5407,
+    "is_hawkish": true
+  },
+  {
+    "title": "EL BANCO MUNDIAL Y EL FONDO LATINOAMERICANO DE RESERVAS DESTACAN LOS AVANCES EN PAGOS INMEDIATOS EN BOLIVIA",
+    "date": "2025-11-07",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2055%20BCB%20BANCO%20MUNDIAL%207%20NOV%202025.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.532,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PLANTEA RUTA CRÍTICA PARA LA IMPLEMENTACIÓN GRADUAL DEL BOLIVIANO DIGITAL HASTA 2026",
+    "date": "2025-11-06",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2054%20Ruta%20cr%C3%ADtica%20Boliviano%20Digital_OK.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3492,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES NETAS MANTIENEN TENDENCIA POSITIVA Y LLEGAN A $US3.227 MILLONES A OCTUBRE DE ESTE AÑO",
+    "date": "2025-11-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2053%20RIN%20octubre%202025%20ok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7836,
+    "is_hawkish": false
+  },
+  {
+    "title": "EXITOSO BONO BCB BICENTENARIO CERRÓ CON  CIFRA RÉCORD DE Bs573 MILLONES",
+    "date": "2025-11-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2052%20Resultados%20Bono%20Bicentenario.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9285,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DESMIENTE SUPUESTAS OPERACIONES FINANCIERAS  CON BANCOS INTERNACIONALES",
+    "date": "2025-10-31",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-51%20Operaciones%20externas%20%28003%29.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3079,
+    "is_hawkish": false
+  },
+  {
+    "title": "VENTA DEL BONO BCB BICENTENARIO CULMINA ESTE 31 DE OCTUBRE",
+    "date": "2025-10-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-50%20Bono%20BCB%20Bicentenario%20cierre%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.978,
+    "is_hawkish": false
+  },
+  {
+    "title": "INFORME DEL BID DESTACA ROL DEL BCB EN EL DESARROLLO DE UN SISTEMA DE PAGOS MODERNO E INCLUSIVO",
+    "date": "2025-10-21",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-48%20Informe%20BID%20sistema%20de%20pagos_okok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3981,
+    "is_hawkish": false
+  },
+  {
+    "title": "HISTÓRICO: EL BCB CULMINA EXITOSA  OPERACIÓN DE VENTA A FUTURO DE ORO",
+    "date": "2025-10-17",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-47%20Pago%20Anticipado%20contrato%20oro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9428,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PUBLICA EL PRIMER INFORME SOBRE EL BOLIVIANO DIGITAL Y SE INTEGRA A LA REVOLUCIÓN GLOBAL DE MONEDAS DIGITALES DE BANCA CENTRAL EN EL MUNDO",
+    "date": "2025-10-15",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-46%20Informe%20Boliviano%20Digital%20OK_.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3658,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTÓ EL LIBRO “HISTORIA ECONÓMICA MONETARIA DEL BICENTENARIO DE BOLIVIA”",
+    "date": "2025-10-14",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-45%20Libro%20Bicentenario%20ok_.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3178,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA LANZA OpenBCB PARA AMPLIAR EL USO DE PAGOS ELECTRÓNICOS CON QR",
+    "date": "2025-10-08",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-44%20LANZAMIENTO%20OPENBCB%20_OK.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3892,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTA MONEDA CONMEMORATIVA POR EL BICENTENARIO DE LA PROCLAMACIÓN DE LA INDEPENDENCIA DE SANTA CRUZ",
+    "date": "2025-09-25",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-42%20Moneda%20Bicentenario%20SCZ.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.329,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA QUE COMO AGENTE FINANCIERO DEL GOBIERNO, NO TIENE COMPETENCIA PARA DEFINIR EL DESTINO DE LOS PAGOS REALIZADOS EN EL EXTERIOR",
+    "date": "2025-09-22",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-41%20ACLARACION%20BCB%20AGENTE%20FINANCIERO.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4817,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL RECHAZA DECLARACIONES ELECTORALES QUE DESCONOCEN EL MARCO LEGAL DE LAS OPERACIONES CON LAS RESERVAS INTERNACIONALES",
+    "date": "2025-09-07",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_40.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9778,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTA MONEDA CONMEMORATIVA DEL BICENTENARIO  DE LA PROCLAMACIÓN DE INDEPENDENCIA DE TARIJA",
+    "date": "2025-09-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-39%20MONEDA%20CONMEMORATIVA%20TARIJA%20ok%20F.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4398,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES NETAS CRECEN EN $US905 MILLONES Y SUPERAN LOS $US2.880 MILLONES HASTA  AGOSTO DE 2025",
+    "date": "2025-09-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_38%20RIN_AGOSTO_2025%20OKOK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.731,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS REMESAS FAMILIARES MARCAN RÉCORD EN JULIO Y FORTALECEN EL INGRESO DE DIVISAS A LA ECONOMÍA",
+    "date": "2025-08-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-36_Remesas%20familiares%20julio%202025_ok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4111,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DEVELA HISTÓRICO MURAL DEL BICENTENARIO: “MADRE PATRIA”",
+    "date": "2025-08-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-35%20BCB%20-MURAL%20DEL%20BICENTENARIO%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5995,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB HABILITA VENTA Y CANJE DEL BILLETE Y MONEDAS DEL BICENTENARIO EN AGENCIAS DEL BANCO UNIÓN EN TODO EL PAÍS",
+    "date": "2025-08-15",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-34%20BCB%20-PUNTOS%20DE%20VENTA%20BUN.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5242,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ENTREGA EN SUCRE EL BILLETE Y MONEDAS CONMEMORATIVAS EN HOMENAJE AL BICENTENARIO DE BOLIVIA",
+    "date": "2025-08-12",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-31%20BCB%20-ENTREGA%20BILLETE%20Y%20MONEDAS%20SUCRE%20%281%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5546,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB RINDE HOMENAJE A LOS 400 AÑOS DE CREACIÓN DE LA UNIVERSIDAD MAYOR, REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA CON UNA MONEDA CONMEMORATIVA",
+    "date": "2025-08-12",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/COMUNICADO%20DE%20PRENSA%2032%20OFICIAL%20MONEDA%20SUCRE.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4965,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA COMISIÓN NACIONAL DE ACTIVOS DIGITALES DE EL SALVADOR ACUERDAN COOPERACIÓN MUTUA PARA EL DESARROLLO DE LOS CRIPTOACTIVOS EN BOLIVIA",
+    "date": "2025-07-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-30%20BCB%20-%20Acuerdo%20BCB%20CNAD%20OK.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4282,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BONO BCB BICENTENARIO LLEGA A LOS NUEVE DEPARTAMENTOS DEL PAÍS Y SUPERA LOS Bs100 MILLONES EN VENTAS",
+    "date": "2025-07-17",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-29%20BCB%20-%20Bicentenario%20100%20MILLONES.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5473,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN OCHO DÍAS, EL BONO BCB BICENTENARIO LOGRA VENTAS POR ENCIMA DE LOS Bs45 MILLONES",
+    "date": "2025-07-07",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-28%20Primera%20semana%20de%20venta%20Bono%20BCB%20Bicentenario%20OKfinal.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.304,
+    "is_hawkish": false
+  },
+  {
+    "title": "SUBE EL PRECIO DE LOS BONOS SOBERANOS: LOS MERCADOS INTERNACIONALES DESTACAN EL PAGO DE LA DEUDA Y EL AUMENTO DE LAS RESERVAS INTERNACIONALES",
+    "date": "2025-07-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-27%20Bonos%20deuda%20Bolivia%20OK.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.8063,
+    "is_hawkish": true
+  },
+  {
+    "title": "AL PRIMER SEMESTRE DEL AÑO LAS RESERVAS INTERNACIONALES  MANTIENEN LA TENDENCIA POSITIVA Y SUPERAN LOS $us2.807 MILLONES",
+    "date": "2025-07-01",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2026%202025%20RIN%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7753,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL LANZA “BONO BCB BICENTENARIO” CON RENTABILIDAD DEL 9,75% Y UNA TASA ADICIONAL INDEXADA AL ORO",
+    "date": "2025-06-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-25_Bono%20BCB%20Bicentenario.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4656,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN UN AÑO LAS OPERACIONES EN ACTIVOS VIRTUALES  CRECIERON EN MÁS DEL 630% Y LLEGARON A $us430 MILLONES",
+    "date": "2025-06-27",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-24_Un%20a%C3%B1o%20AV%20FINAL%2027jun25.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3923,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL SISTEMA DE PAGOS NACIONAL LOGRA CIFRAS RÉCORD Y SE ABRE A NUEVOS ACTORES INTERNACIONALES",
+    "date": "2025-06-25",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-23_Pagos%20electr%C3%B3nicos%20mayo%20FINAL.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4966,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB AMPLÍA MEDIDAS QUE IMPULSAN EL CRÉDITO PRODUCTIVO Y OPTIMIZAN LA LIQUIDEZ DEL SISTEMA FINANCIERO",
+    "date": "2025-06-17",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-22_Encaje%20Legal%20FINAL.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9351,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB REÚNE A DIEZ EXPERTOS INTERNACIONALES EN ECONOMÍA DIGITAL EN EL 18 ENCUENTRO DE ECONOMISTAS",
+    "date": "2025-06-11",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_%2020.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3278,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL 18 ENCUENTRO DE ECONOMISTAS DEL BCB CIERRA CON EL DESAFÍO DE PROFUNDIZAR LOS ECOSISTEMAS DIGITALES Y SENTAR LAS BASES DE LA REGULACIÓN",
+    "date": "2025-06-11",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_%2021.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3693,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB AMPLIA FINANCIAMIENTO DESTINADO A MICRO Y PEQUEÑAS EMPRESAS DE LAS ÁREAS RURAL Y PERIURBANA DE PAÍS",
+    "date": "2025-06-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-19_financiamiento%20BDP%20OK_2.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3512,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PONE EN CIRCULACIÓN LA SERIE “B” DE LA PRIMERA FAMILIA DE BILLETES CON MODERNAS MEDIDAS DE SEGURIDAD",
+    "date": "2025-06-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-18_El%20Serie%20B%20billetes%20OKI.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6932,
+    "is_hawkish": false
+  },
+  {
+    "title": "PUERTAS ABIERTAS: EL BANCO CENTRAL RECIBE  LA VISITA DE 50 ESTUDIANTES DE ECONOMÍA",
+    "date": "2025-05-22",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-16_El%20BCB%20Puertas%20_1.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5804,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES CRECEN EN $US642 MILLONES ENTRE ENERO Y ABRIL DE 2025",
+    "date": "2025-05-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%20014%202025%20RIN%201er%20CUATRIMESTRE.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7265,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB CIERRA LA XVIII JORNADA MONETARIA CON EL DESAFÌO DE ENCARAR LOS CAMBIOS DE LA ERA DIGITAL CON VISION Y EQUIDAD",
+    "date": "2025-04-29",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%20013%202025%20CIERRE%20XVIII%20JORNADA%20MONETARIA-1.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.6465,
+    "is_hawkish": true
+  },
+  {
+    "title": "BCB INAUGURA LA XVIII JORNADA MONETARIA  CON LA ASISTENCIA DE MÁS DE 4.000 PARTICIPANTES  Y SIETE EXPERTOS INTERNACIONALES",
+    "date": "2025-04-29",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2012%20XVIII%20JornadaMonetaria%20APERTURA.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3057,
+    "is_hawkish": false
+  },
+  {
+    "title": "RENDICIÓN DE CUENTAS INICIAL 2025: EL BCB REDEFINE LINEAMIENTOS ESTRATÉGICOS PARA APOYAR AL DESARROLLO DE LA ECONOMÍA",
+    "date": "2025-04-25",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2011%20RENDICI%C3%93N%20INICIAL%202025%20BCB.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.6421,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA ADUANA NACIONAL HABILITAN CERTIFICADO DE EXPORTACIÓN DE ORO EN LÍNEA",
+    "date": "2025-04-01",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%20008_VUCE%20ANB%20BCB%20PARA%2001%20DE%20ABRIL%20DE%202025.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.5126,
+    "is_hawkish": true
+  },
+  {
+    "title": "ENTRA EN CIRCULACIÓN MONEDA DE BS 1  CON NUEVA MEDIDA DE SEGURIDAD",
+    "date": "2025-03-21",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%20007_Nueva%20Moneda%20Un%20Bs%20OK.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.374,
+    "is_hawkish": false
+  },
+  {
+    "title": "RENDICIÓN PÚBLICA DE CUENTAS 2024: EL BCB CUMPLE COMPROMISOS Y APLICA POLÍTICAS QUE PRESERVARON LA ESTABILIDAD",
+    "date": "2025-02-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_006%202025%20RENDICI%C3%93N%20DE%20CUENTAS.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5479,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA VERSIONES DESCONTEXTUALIZADAS SOBRE LA PROVISION DE MATERIAL MONETARIO",
+    "date": "2025-01-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-03_BCB%20aclara%20llegada%20de%20Material%20Monetario.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.2839,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL ENTE EMISOR AMPLÍA LA VENTA DEL BONO BCB  EN DÓLARES HASTA EL 31 DE DICIEMBRE DE 2025",
+    "date": "2025-01-06",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-02_BONO%20BCB%20DOLARES.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7095,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN 2024 LAS RESERVAS INTERNACIONALES NETAS INCREMENTARON EN $US 267 MILLONES",
+    "date": "2025-01-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_001_2025_RIN_BCB_OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.8221,
+    "is_hawkish": false
+  },
+  {
+    "title": "CADA VEZ MÁS BOLIVIANOS UTILIZAN MEDIOS ELECTRÓNICOS DE PAGO; EL FAVORITO ES EL QR QUE CRECIÓ EN 4.700%",
+    "date": "2024-12-20",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP%2060%20MEDIOS%20ELECTRONICOS%20DE%20PAGO.docx__0.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4209,
+    "is_hawkish": false
+  },
+  {
+    "title": "ARRANCA LA “SEMANA BCB NAVIDEÑA” RESALTANDO LOS VALORES DE SOLIDARIDAD, ESPERANZA Y UNIÓN ENTRE LOS BOLIVIANOS",
+    "date": "2024-12-16",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_59_SEMANA%20NAVIDE%C3%91A%20DEL%20BCB1.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.452,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN CUATRO MESES, USO DE ACTIVOS VIRTUALES SUPERA LOS $us75 MILLONES Y DINAMIZA EL SISTEMA DE PAGOS NACIONAL",
+    "date": "2024-11-25",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_58_USO_ACTIVOS_VIRTUALES.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3362,
+    "is_hawkish": false
+  },
+  {
+    "title": "DURANTE LA PRESENTE GESTIÓN EL BCB LLEVA ADELANTE PROCESOS DE ADQUISICIÓN DE MATERIAL MONETARIO",
+    "date": "2024-11-12",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_57_BILLETES%20SERIE_B_F_OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3495,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DEJA SIN EFECTO LA  RESOLUCIÓN DE DIRECTORIO N°148/2024",
+    "date": "2024-11-08",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_56_Resoluci%C3%B3n_148_2024.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3844,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB DESMIENTE VERSIONES DESCONTEXTUALIZADAS SOBRE  SUPUESTA AUTORIZACIÓN DE VENTA DE LAS RESERVAS DE OR",
+    "date": "2024-11-07",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP55%20-%20Comunicado%20Desmiente%20Versiones%20Sobre%20Reservas%20en%20Oro.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5079,
+    "is_hawkish": true
+  },
+  {
+    "title": "EL BCB PRESENTA EL DISEÑO GANADOR DEL MURAL CONMEMORATIVO DEL BICENTENARIO",
+    "date": "2024-10-21",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-53%20-%20Presentaci%C3%B3n%20Mural%20BCB2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3917,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL LANZA EL BONO BCB NAVIDEÑO 2024 CON LAS CONDICIONES MÁS COMPETITIVAS DEL MERCADO",
+    "date": "2024-10-03",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP52%20BONO%20BCB%20NAVIDE%C3%91O%202024.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5752,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PAGÓ EL 82% DEL TOTAL DE LA DEUDA PÚBLICA EXTERNA PROGRAMADA PARA 2024",
+    "date": "2024-09-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP51_30sep24%20PagoDeudaExterna.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.2638,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN SOLO TRES MESES LAS OPERACIONES CON ACTIVOS VIRTUALES CRECIERON EN MÁS DEL 100%",
+    "date": "2024-09-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/26sep24%20CP50%20ACTIVOS%20VIRTUALES.PDF",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3385,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA PROMUEVE INNOVACIONES DIGITALES CON LAS EWALLET Y LAS TARJETAS ELECTRÓNICAS VIRTUALES",
+    "date": "2024-09-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/25sep24_CP49%20EWALLET%20Y%20TARJETAS%20ELECTRONICAS%20VIRTUALES.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3755,
+    "is_hawkish": false
+  },
+  {
+    "title": "PRESIDENTE DEL BCB ATIENDE INVITACIÓN OFICIAL DEL REINO UNIDO PARA FORTALECER LAS RELACIONES BILATERALES",
+    "date": "2024-09-13",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_48%20VisitapresidenteBCBLondres_1f%20%281%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3946,
+    "is_hawkish": false
+  },
+  {
+    "title": "CIERRA EL 17 ENCUENTRO DE ECONOMISTAS DE BOLIVIA CON UN PROFUNDO ANÁLISIS DEL ESCENARIO ACTUAL Y LOS DESAFÍOS Y OPORTUNIDADES PARA LA REGIÓN",
+    "date": "2024-09-06",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_47%2017EncuentroEconomistas2024_1.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4672,
+    "is_hawkish": false
+  },
+  {
+    "title": "CON UNA MASIVA PARTICIPACIÓN EL BCB INAUGURA EL 17 ENCUENTRO DE ECONOMISTAS DE BOLIVIA EN SUCRE",
+    "date": "2024-09-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_46%2017EncuentroEnonomistasB.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4216,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RIN SE MANTIENEN  ESTABLES Y CON TENDENCIA POSITIVA",
+    "date": "2024-09-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_45%20ReservasInternacionales2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5688,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB COMUNICA QUE LA PROVISIÓN DE BILLETES ES UNA OPERACIÓN HABITUAL PARA REPONER EL MATERIAL  MONETARIO DESTRUIDO Y EN MAL ESTADO",
+    "date": "2024-07-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-37%20-%20Reposici%C3%B3nMaterialMonetario2.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.7291,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB EN COORDINACIÓN CON ASFI Y UIF ACTUALIZA NORMATIVA EN TORNO A LOS ACTIVOS VIRTUALES",
+    "date": "2024-06-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_35%20NormativaActivosVirtuales.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4425,
+    "is_hawkish": false
+  },
+  {
+    "title": "CENTENARES DE NIÑAS Y NIÑOS DE LA PAZ CELEBRAN EL “DÍA DEL NIÑO BCB”",
+    "date": "2024-04-12",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_25%20D%C3%ADaDelNi%C3%B1oBCB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3705,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ENTREGA NUEVO LOTE DE EQUIPOS DE OFICINA Y MOBILIARIO A UNIDADES EDUCATIVAS DE PROVINCIAS PACEÑAS",
+    "date": "2024-03-27",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_22%20EntregaEquiposElAlto.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.7852,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BONO BCB EN DÓLARES SUPERA LOS $US 8,8 MILLONES CON LA INVERSIÓN DE PERSONAS JURÍDICAS",
+    "date": "2024-03-05",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_16%20AumentoColocaci%C3%B3nBonos.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4897,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN DOS DÍAS EL BCB LOGRA COLOCAR BONOS EN DÓLARES POR $US428 MIL",
+    "date": "2024-02-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_12%20VentaBonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5788,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB EMITE EL “BONO BCB EN DÓLARES” EN COORDINACIÓN CON ASOBAN",
+    "date": "2024-02-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_11%20LanzamientoBonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7218,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA BANCA NACIONAL SE REÚNEN PARA VIABILIZAR EL LANZAMIENTO DE BONOS EN DÓLARES ESTADOUNIDENSES",
+    "date": "2024-02-20",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_10%20BonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.8557,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DENUNCIA USO DE SU NOMBRE Y PRESTIGIO EN LA VENTA DE FICHAS PARA ADQUIRIR DÓLARES ESTADOUNIDENSES",
+    "date": "2024-02-16",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_09%20BCBDenunciaFichas.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.4118,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA VERSIONES ERRÓNEAS SOBRE LA ADMINISTRACIÓN DE LAS RESERVAS DE ORO",
+    "date": "2024-02-08",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_7%20ComunicadoFitch.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3015,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PROMUEVE EL ACERCAMIENTO DE INVERSORES Y EJECUTIVOS DE BANCA BRITÁNICOS CON SECTORES PRODUCTIVOS DEL PAÍS",
+    "date": "2024-02-06",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_6%20BCBVisitaBancosBrit%C3%A1nicos.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3357,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB COADYUVARÁ CON EL SISTEMA FINANCIERO SIN NINGÚN COSTO EN EL PAGO DE GIROS Y REMESAS EN FAVOR DE BENEFICIARIOS",
+    "date": "2024-01-18",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_4%20PagoGirosRemesas.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3103,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB IMPULSA LAS FINANZAS VERDES EN BENEFICIO DEL MEDIO AMBIENTE",
+    "date": "2024-01-11",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_03_BCB_impulsa_las_Finanzas_Verdes.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3298,
+    "is_hawkish": false
+  },
+  {
+    "title": "EVOLUCIÓN DE LAS RESERVAS INTERNACIONALES EN 2023 COADYUVARON AL CRECIMIENTO Y A LA ESTABILIDAD DE LA ECONOMÍA",
+    "date": "2024-01-04",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-2%20ReservasInternacionales2023-2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6704,
+    "is_hawkish": false
+  },
+  {
+    "title": "A NOVIEMBRE DE 2023 LAS REMESAS  REGISTRARON RÉCORD HISTÓRICO",
+    "date": "2024-01-02",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_01%20%20RemesasNoviembre2023.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.323,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB PRESENTA MUESTRA FOTOGRÁFICA: “A 20 AÑOS DE LA GUERRA DEL GAS, RECUPERANDO LA MEMORIA COLECTIVA DEL PUEBLO BOLIVIANO”",
+    "date": "2023-11-30",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_84%20MuestraPl%C3%A1stica.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3255,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA SOBRE LA COMPRA DE ORO EN MERCADO INTERNO PARA EL FORTALECIMIENTO DE LAS RIN",
+    "date": "2023-11-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_83%20Aclaraci%C3%B3nCompraOroBCB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3142,
+    "is_hawkish": false
+  },
+  {
+    "title": "CALIFICADORA OMITE DESEMPEÑO POSITIVO DE LA ECONOMÍA",
+    "date": "2023-11-23",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/INFORME%20CALIFICADORA%20OKY.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.2725,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL LANZA EL “BONO BCB NAVIDEÑO” QUE PODRÁ SER ADQUIRIDO EN UFV Y BOLIVIANOS",
+    "date": "2023-11-07",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_80%20BCBBonoNavide%C3%B1o2023.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9056,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA INAUGURA EL DECIMOSEXTO ENCUENTRO DE ECONOMISTAS DE BOLIVIA EN COCHABAMBA",
+    "date": "2023-10-26",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/Comunicado%20de%20prensa%20inicio%2016EEB%20ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4841,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA COMPRA MÁS DE UNA TONELADA DE ORO FINO",
+    "date": "2023-10-20",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/NP_77%20CompraToneladaOro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6771,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DA CUMPLIMIENTO A LA LEY 1503 DE COMPRA DE ORO",
+    "date": "2023-09-15",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_75%20CompraDeOro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4123,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB INAUGURA CURSO PARA CAJEROS Y RECONTADORES SOBRE NORMATIVA Y MEDIDAS DE SEGURIDAD DEL MATERIAL MONETARIO",
+    "date": "2023-08-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_73_CURSO%20CAJEROS.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.2917,
+    "is_hawkish": false
+  },
+  {
+    "title": "ACLARACIÓN SOBRE IMPRECISIÓN DEL SALDO ADEUDADO POR LAS EMPRESAS PÚBLICAS CON EL BCB",
+    "date": "2023-08-23",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_72%20Aclaraci%C3%B3nMedioDePrensa.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3278,
+    "is_hawkish": false
+  },
+  {
+    "title": "BOLIVIA PAGA PUNTUALMENTE Y EN SU TOTALIDAD CAPITAL E INTERESES DE BONO SOBERANO EMITIDO EN 2013",
+    "date": "2023-08-22",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_71%20PagoBonoSoberano2013.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3544,
+    "is_hawkish": false
+  },
+  {
+    "title": "SE AMPLÍA EL PLAZO DE ENTREGA DE INVESTIGACIONES PARA EL 16 ENCUENTRO DE ECONOMISTAS DE BOLIVIA",
+    "date": "2023-08-15",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_70%20Ampliaci%C3%B3nPlazo16EEB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4424,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB VELA POR LA ESTABILIDAD ECONÓMICA Y FOMENTA LA ACTIVIDAD CULTURAL EN EL PAÍS: CELEBRACIÓN DE LOS 250 AÑOS DE LA CASA NACIONAL DE MONEDA",
+    "date": "2023-07-31",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_69%20CasaDeMoneda250A%C3%B1os.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5339,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB VELA POR LA ESTABILIDAD ECONÓMICA Y FOMENTA LA ACTIVIDAD CULTURAL EN EL PAÍS: INAUGURACIÓN DE LA CASA MUSEO INÉS CÓRDOVA-GIL IMANÁ",
+    "date": "2023-07-28",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_68%20CasaMuseoGilIman%C3%A1.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4721,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB CUMPLE PUNTUALMENTE CON LA PROGRAMACIÓN DE LAS OBLIGACIONES DE LA DEUDA PÚBLICA EXTERNA",
+    "date": "2023-07-27",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_67%20PAGODEDEUDA.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3849,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB CELEBRA 95 AÑOS DE VIDA INSTITUCIONAL AL SERVICIO DE LA ECONOMÍA BOLIVIANA",
+    "date": "2023-07-20",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_64%20AniversarioBCB.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.9812,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB RECIBE PREMIO AL MEJOR STAND TECNOLÓGICO EN LA PAZ EXPONE 2023",
+    "date": "2023-07-17",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_63%20LA%20PAZ%20EXPONE%20BCB.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5344,
+    "is_hawkish": false
+  },
+  {
+    "title": "AL PRIMER TRIMESTRE 2023 LA INVERSIÓN EXTRANJERA DIRECTA PRESENTÓ FLUJO POSITIVO DE $US 60 MILLONES",
+    "date": "2023-07-14",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_62%20Inversi%C3%B3nExtranjera.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3613,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB LANZA XVI JORNADA MONETARIA: “POLÍTICA MONETARIA Y FINANZAS VERDES, LA RUTA AL DESARROLLO SOSTENIBLE”",
+    "date": "2023-07-03",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_59%20XVIJornadaMonetaria.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3353,
+    "is_hawkish": false
+  },
+  {
+    "title": "LA TASA DE REFERENCIA (TRe) EN MONEDA NACIONAL DISMINUYE A 2,77% PARA EL MES DE JULIO",
+    "date": "2023-07-01",
+    "type": "comunicados",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP_58%20Reducci%C3%B3nTRe.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3353,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB AFIRMA QUE NO PUEDE LEGALIZAR BILLETES SINIESTRADOS Y REFLEXIONA QUE LA ASAMBLEA TAL VEZ PUEDE CONSIDERAR EL TEMA",
+    "date": "2026-03-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/6%20MAR%20NP5%20BILLETES%20ALPv2%20%283%29.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3224,
+    "is_hawkish": false
+  },
+  {
+    "title": "REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-03-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/5marb26%20C2%20Revocatoria%20%28002%29%20%282%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.48,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB LANZA APLICACIÓN MÓVIL PARA QUE LA CIUDADANÍA VERIFIQUE LA VALIDEZ DE LOS BILLETES DE BS 10, BS 20 Y BS 50 DE LA SERIE B",
+    "date": "2026-03-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/NPRENSA%20APP%20%283%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3643,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB INHABILITA LOS CORTES DE Bs10, Bs20 Y Bs50 DE LA SERIE B DE LA NUEVA FAMILIA DE BILLETES DE BOLIVIANO",
+    "date": "2026-02-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/28feb26%20CP8%20bcb%20inhabilita%20billetes%20serie%20B%20final_0.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.336,
+    "is_hawkish": false
+  },
+  {
+    "title": "Difusión de Resultados de la Subasta 9/2026 (Publicación OMA)",
+    "date": "2026-02-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/Publicaci%C3%B3n%20OMA%209-2026%20%282%29.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.6296,
+    "is_hawkish": true
+  },
+  {
+    "title": "REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-02-11",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/11feb26%20C1%20Revocatoria%20%281%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4091,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL ACLARA EL ALCANCE DEL REFINANCIAMIENTO OTORGADO AL TESORO GENERAL DE LA NACIÓN",
+    "date": "2026-02-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/6feb26%20CP%206%20Refinanciamiento%20%282%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.591,
+    "is_hawkish": false
+  },
+  {
+    "title": "ADMINISTRACIÓN DE LAS RESERVAS INTERNACIONALES AL TERCER CUATRIMESTRE DE 2025",
+    "date": "2026-02-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/5feb26%20CP%205%20RI%20%281%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.334,
+    "is_hawkish": false
+  },
+  {
+    "title": "COMUNICADO - REVOCATORIA DE TESTIMONIOS DE PODER",
+    "date": "2026-02-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/2feb26%20CP%204%20Revocatorias%20OK.PDF",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4466,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DEVUELVE LOS DEPÓSITOS EN DÓLARES A PEQUEÑOS AHORRISTAS DEL SISTEMA FINANCIERO NACIONAL",
+    "date": "2026-01-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/26ene26%20CP3%20Devoluci%C3%B3n%20d%C3%B3lares%20ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5484,
+    "is_hawkish": true
+  },
+  {
+    "title": "Difusión de resultados de la subasta 4/2026, publicación OMA",
+    "date": "2026-01-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/subasta_22.01.26%20web.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4346,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB REMITE A LA ASAMBLEA EL INFORME SOBRE OPERACIONES CON RESERVAS DE ORO AL TERCER CUATRIMESTRE DE 2025",
+    "date": "2026-01-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2002%20Informe%20reservas%20oro%20OK%20%28004%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4057,
+    "is_hawkish": false
+  },
+  {
+    "title": "PRESIDENTE Y DIRECTORIO DEL BANCO CENTRAL DE BOLIVIA RECIBEN LA VISITA DEL PRESIDENTE Y LA VICEPRESIDENTA DEL BID",
+    "date": "2026-01-13",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/NP%202V%20VISITA%20BID%2012ene26.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3156,
+    "is_hawkish": false
+  },
+  {
+    "title": "Difusión de resultados de la subasta 2/2026, publicación OMA",
+    "date": "2026-01-08",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/subasta_08.01.26%20web.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4519,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB RATIFICA LA VIGENCIA DEL VALOR REFERENCIAL DEL DÓLAR ESTADOUNIDENSE",
+    "date": "2026-01-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP01%2005.01.25_0.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.599,
+    "is_hawkish": true
+  },
+  {
+    "title": "EJECUCIÓN DE LA II REVISIÓN DEL PROGRAMA FISCAL FINANCIERO 2025 SE MANTIENE DENTRO DE LOS LÍMITES ESTABLECIDOS",
+    "date": "2025-12-31",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/NP%2060%20Publicaci%C3%B2n%20Metas%20PFF%20OK%20%28004%29%20%28002%29.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3258,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PUBLICA EL CALENDARIO ANTICIPADO DE DIVULGACIÓN DE DATOS Y MARCA UN HITO EN EL ACCESO A LA INFORMACIÓN PARA 2026",
+    "date": "2025-12-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2059%20Publicaci%C3%B2n%20CAD%20%281%29.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4607,
+    "is_hawkish": false
+  },
+  {
+    "title": "POSESIONAN AL NUEVO CONSEJO DE LA FUNDACIÓN CULTURAL DEL BCB",
+    "date": "2025-12-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2058%20Nuevos%20consejeros%20FCBCB%20%28002%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5446,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB PRESENTA EL DIAGNÓSTICO DE LAS RIN Y EL PROGRAMA FISCAL FINANCIERO, LA REORIENTACIÓN DE LA POLÍTICA CAMBIARIA Y EL RESTABLECIMIENTO DEL ACCESO A LA INFORMACIÓN",
+    "date": "2025-12-04",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2057%20Evaluaci%C3%B3n%20BCB%20OK.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.8872,
+    "is_hawkish": true
+  },
+  {
+    "title": "EL BCB PUBLICA EL VALOR REFERENCIAL DEL DÓLAR ESTADOUNIDENSE",
+    "date": "2025-12-01",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/COMUNICADO%20DE%20PRENSA%20BCB_DIC_ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.5407,
+    "is_hawkish": true
+  },
+  {
+    "title": "EL BANCO MUNDIAL Y EL FONDO LATINOAMERICANO DE RESERVAS DESTACAN LOS AVANCES EN PAGOS INMEDIATOS EN BOLIVIA",
+    "date": "2025-11-07",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2055%20BCB%20BANCO%20MUNDIAL%207%20NOV%202025.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.532,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PLANTEA RUTA CRÍTICA PARA LA IMPLEMENTACIÓN GRADUAL DEL BOLIVIANO DIGITAL HASTA 2026",
+    "date": "2025-11-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2054%20Ruta%20cr%C3%ADtica%20Boliviano%20Digital_OK.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3492,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES NETAS MANTIENEN TENDENCIA POSITIVA Y LLEGAN A $US3.227 MILLONES A OCTUBRE DE ESTE AÑO",
+    "date": "2025-11-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2053%20RIN%20octubre%202025%20ok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7836,
+    "is_hawkish": false
+  },
+  {
+    "title": "EXITOSO BONO BCB BICENTENARIO CERRÓ CON  CIFRA RÉCORD DE Bs573 MILLONES",
+    "date": "2025-11-04",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2052%20Resultados%20Bono%20Bicentenario.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9285,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DESMIENTE SUPUESTAS OPERACIONES FINANCIERAS  CON BANCOS INTERNACIONALES",
+    "date": "2025-10-31",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-51%20Operaciones%20externas%20%28003%29.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3079,
+    "is_hawkish": false
+  },
+  {
+    "title": "VENTA DEL BONO BCB BICENTENARIO CULMINA ESTE 31 DE OCTUBRE",
+    "date": "2025-10-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-50%20Bono%20BCB%20Bicentenario%20cierre%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.978,
+    "is_hawkish": false
+  },
+  {
+    "title": "INFORME DEL BID DESTACA ROL DEL BCB EN EL DESARROLLO DE UN SISTEMA DE PAGOS MODERNO E INCLUSIVO",
+    "date": "2025-10-21",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-48%20Informe%20BID%20sistema%20de%20pagos_okok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3981,
+    "is_hawkish": false
+  },
+  {
+    "title": "HISTÓRICO: EL BCB CULMINA EXITOSA  OPERACIÓN DE VENTA A FUTURO DE ORO",
+    "date": "2025-10-17",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-47%20Pago%20Anticipado%20contrato%20oro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9428,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PUBLICA EL PRIMER INFORME SOBRE EL BOLIVIANO DIGITAL Y SE INTEGRA A LA REVOLUCIÓN GLOBAL DE MONEDAS DIGITALES DE BANCA CENTRAL EN EL MUNDO",
+    "date": "2025-10-15",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-46%20Informe%20Boliviano%20Digital%20OK_.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3658,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTÓ EL LIBRO “HISTORIA ECONÓMICA MONETARIA DEL BICENTENARIO DE BOLIVIA”",
+    "date": "2025-10-14",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-45%20Libro%20Bicentenario%20ok_.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3178,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA LANZA OpenBCB PARA AMPLIAR EL USO DE PAGOS ELECTRÓNICOS CON QR",
+    "date": "2025-10-08",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-44%20LANZAMIENTO%20OPENBCB%20_OK.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3892,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTA MONEDA CONMEMORATIVA POR EL BICENTENARIO DE LA PROCLAMACIÓN DE LA INDEPENDENCIA DE SANTA CRUZ",
+    "date": "2025-09-25",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-42%20Moneda%20Bicentenario%20SCZ.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.329,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA QUE COMO AGENTE FINANCIERO DEL GOBIERNO, NO TIENE COMPETENCIA PARA DEFINIR EL DESTINO DE LOS PAGOS REALIZADOS EN EL EXTERIOR",
+    "date": "2025-09-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-41%20ACLARACION%20BCB%20AGENTE%20FINANCIERO.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4817,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL RECHAZA DECLARACIONES ELECTORALES QUE DESCONOCEN EL MARCO LEGAL DE LAS OPERACIONES CON LAS RESERVAS INTERNACIONALES",
+    "date": "2025-09-07",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_40.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9778,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTA MONEDA CONMEMORATIVA DEL BICENTENARIO  DE LA PROCLAMACIÓN DE INDEPENDENCIA DE TARIJA",
+    "date": "2025-09-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-39%20MONEDA%20CONMEMORATIVA%20TARIJA%20ok%20F.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4398,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES NETAS CRECEN EN $US905 MILLONES Y SUPERAN LOS $US2.880 MILLONES HASTA  AGOSTO DE 2025",
+    "date": "2025-09-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_38%20RIN_AGOSTO_2025%20OKOK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.731,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS REMESAS FAMILIARES MARCAN RÉCORD EN JULIO Y FORTALECEN EL INGRESO DE DIVISAS A LA ECONOMÍA",
+    "date": "2025-08-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-36_Remesas%20familiares%20julio%202025_ok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4111,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DEVELA HISTÓRICO MURAL DEL BICENTENARIO: “MADRE PATRIA”",
+    "date": "2025-08-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-35%20BCB%20-MURAL%20DEL%20BICENTENARIO%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5995,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB HABILITA VENTA Y CANJE DEL BILLETE Y MONEDAS DEL BICENTENARIO EN AGENCIAS DEL BANCO UNIÓN EN TODO EL PAÍS",
+    "date": "2025-08-15",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-34%20BCB%20-PUNTOS%20DE%20VENTA%20BUN.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5242,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB RINDE HOMENAJE A LOS 400 AÑOS DE CREACIÓN DE LA UNIVERSIDAD MAYOR, REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA CON UNA MONEDA CONMEMORATIVA",
+    "date": "2025-08-12",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/COMUNICADO%20DE%20PRENSA%2032%20OFICIAL%20MONEDA%20SUCRE.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4965,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ENTREGA EN SUCRE EL BILLETE Y MONEDAS CONMEMORATIVAS EN HOMENAJE AL BICENTENARIO DE BOLIVIA",
+    "date": "2025-08-12",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-31%20BCB%20-ENTREGA%20BILLETE%20Y%20MONEDAS%20SUCRE%20%281%29.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5546,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA COMISIÓN NACIONAL DE ACTIVOS DIGITALES DE EL SALVADOR ACUERDAN COOPERACIÓN MUTUA PARA EL DESARROLLO DE LOS CRIPTOACTIVOS EN BOLIVIA",
+    "date": "2025-07-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-30%20BCB%20-%20Acuerdo%20BCB%20CNAD%20OK.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4282,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BONO BCB BICENTENARIO LLEGA A LOS NUEVE DEPARTAMENTOS DEL PAÍS Y SUPERA LOS Bs100 MILLONES EN VENTAS",
+    "date": "2025-07-17",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-29%20BCB%20-%20Bicentenario%20100%20MILLONES.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5473,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN OCHO DÍAS, EL BONO BCB BICENTENARIO LOGRA VENTAS POR ENCIMA DE LOS Bs45 MILLONES",
+    "date": "2025-07-07",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-28%20Primera%20semana%20de%20venta%20Bono%20BCB%20Bicentenario%20OKfinal.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.304,
+    "is_hawkish": false
+  },
+  {
+    "title": "SUBE EL PRECIO DE LOS BONOS SOBERANOS: LOS MERCADOS INTERNACIONALES DESTACAN EL PAGO DE LA DEUDA Y EL AUMENTO DE LAS RESERVAS INTERNACIONALES",
+    "date": "2025-07-04",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-27%20Bonos%20deuda%20Bolivia%20OK.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.8063,
+    "is_hawkish": true
+  },
+  {
+    "title": "AL PRIMER SEMESTRE DEL AÑO LAS RESERVAS INTERNACIONALES  MANTIENEN LA TENDENCIA POSITIVA Y SUPERAN LOS $us2.807 MILLONES",
+    "date": "2025-07-01",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2026%202025%20RIN%20OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7753,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL LANZA “BONO BCB BICENTENARIO” CON RENTABILIDAD DEL 9,75% Y UNA TASA ADICIONAL INDEXADA AL ORO",
+    "date": "2025-06-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-25_Bono%20BCB%20Bicentenario.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4656,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN UN AÑO LAS OPERACIONES EN ACTIVOS VIRTUALES  CRECIERON EN MÁS DEL 630% Y LLEGARON A $us430 MILLONES",
+    "date": "2025-06-27",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-24_Un%20a%C3%B1o%20AV%20FINAL%2027jun25.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3923,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL SISTEMA DE PAGOS NACIONAL LOGRA CIFRAS RÉCORD Y SE ABRE A NUEVOS ACTORES INTERNACIONALES",
+    "date": "2025-06-25",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-23_Pagos%20electr%C3%B3nicos%20mayo%20FINAL.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4966,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB AMPLÍA MEDIDAS QUE IMPULSAN EL CRÉDITO PRODUCTIVO Y OPTIMIZAN LA LIQUIDEZ DEL SISTEMA FINANCIERO",
+    "date": "2025-06-17",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-22_Encaje%20Legal%20FINAL.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9351,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL 18 ENCUENTRO DE ECONOMISTAS DEL BCB CIERRA CON EL DESAFÍO DE PROFUNDIZAR LOS ECOSISTEMAS DIGITALES Y SENTAR LAS BASES DE LA REGULACIÓN",
+    "date": "2025-06-11",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_%2021.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3693,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB REÚNE A DIEZ EXPERTOS INTERNACIONALES EN ECONOMÍA DIGITAL EN EL 18 ENCUENTRO DE ECONOMISTAS",
+    "date": "2025-06-11",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_%2020.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3278,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB AMPLIA FINANCIAMIENTO DESTINADO A MICRO Y PEQUEÑAS EMPRESAS DE LAS ÁREAS RURAL Y PERIURBANA DE PAÍS",
+    "date": "2025-06-04",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-19_financiamiento%20BDP%20OK_2.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3512,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PONE EN CIRCULACIÓN LA SERIE “B” DE LA PRIMERA FAMILIA DE BILLETES CON MODERNAS MEDIDAS DE SEGURIDAD",
+    "date": "2025-06-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-18_El%20Serie%20B%20billetes%20OKI.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6932,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PONE EN VIGENCIA POLÍTICAS  QUE INCENTIVAN EL AHORRO EN UFV",
+    "date": "2025-05-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-17_El%20BCB%20INCENTIVA%20EL%20AHORRO%20EN%20UFV%20ok.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9762,
+    "is_hawkish": false
+  },
+  {
+    "title": "PUERTAS ABIERTAS: EL BANCO CENTRAL RECIBE  LA VISITA DE 50 ESTUDIANTES DE ECONOMÍA",
+    "date": "2025-05-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-16_El%20BCB%20Puertas%20_1.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5804,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RESERVAS INTERNACIONALES CRECEN EN $US642 MILLONES ENTRE ENERO Y ABRIL DE 2025",
+    "date": "2025-05-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_014%202025%20RIN%201er%20CUATRIMESTRE.PDF",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7265,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB CIERRA LA XVIII JORNADA MONETARIA CON EL DESAFÌO DE ENCARAR LOS CAMBIOS DE LA ERA DIGITAL CON VISION Y EQUIDAD",
+    "date": "2025-04-29",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%20013%202025%20CIERRE%20XVIII%20JORNADA%20MONETARIA-1_0.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.6465,
+    "is_hawkish": true
+  },
+  {
+    "title": "BCB INAUGURA LA XVIII JORNADA MONETARIA  CON LA ASISTENCIA DE MÁS DE 4.000 PARTICIPANTES  Y SIETE EXPERTOS INTERNACIONALES",
+    "date": "2025-04-29",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2012%20XVIII%20JornadaMonetaria%20APERTURA.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3057,
+    "is_hawkish": false
+  },
+  {
+    "title": "RENDICIÓN DE CUENTAS INICIAL 2025: EL BCB REDEFINE LINEAMIENTOS ESTRATÉGICOS PARA APOYAR AL DESARROLLO DE LA ECONOMÍA",
+    "date": "2025-04-25",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2011%20RENDICI%C3%93N%20INICIAL%202025%20BCB.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.6421,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN EL MARCO DE LA LEY 1670 BCB APRUEBA REGLAMENTO DE ADMINISTRACIÓN DE LAS RIN",
+    "date": "2025-04-03",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%20009%20RD%20028%202025.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.5501,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA ADUANA NACIONAL HABILITAN CERTIFICADO DE EXPORTACIÓN DE ORO EN LÍNEA",
+    "date": "2025-04-01",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%20008_VUCE%20ANB%20BCB%20PARA%2001%20DE%20ABRIL%20DE%202025.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.5126,
+    "is_hawkish": true
+  },
+  {
+    "title": "ENTRA EN CIRCULACIÓN MONEDA DE BS 1  CON NUEVA MEDIDA DE SEGURIDAD",
+    "date": "2025-03-21",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%20007_Nueva%20Moneda%20Un%20Bs%20OK.PDF",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.374,
+    "is_hawkish": false
+  },
+  {
+    "title": "RENDICIÓN PÚBLICA DE CUENTAS 2024: EL BCB CUMPLE COMPROMISOS Y APLICA POLÍTICAS QUE PRESERVARON LA ESTABILIDAD",
+    "date": "2025-02-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_006%202025%20RENDICI%C3%93N%20DE%20CUENTAS.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5479,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB LANZA EL DECIMOCTAVO ENCUENTRO DE ECONOMISTAS DE BOLIVIA EN LA CIUDAD DE SANTA CRUZ DE LA SIERRA",
+    "date": "2025-02-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_05_BCB%20Lanzamiento%20del%2018EEB.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3246,
+    "is_hawkish": false
+  },
+  {
+    "title": "MÁS DE 50 PERIODISTAS SE CERTIFICAN EN TÓPICOS DE BANCA CENTRAL",
+    "date": "2025-02-19",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%20004%202025%20TALLER%20PERIODISTAS.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.2972,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA VERSIONES DESCONTEXTUALIZADAS SOBRE LA PROVISION DE MATERIAL MONETARIO",
+    "date": "2025-01-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-03_BCB%20aclara%20llegada%20de%20Material%20Monetario.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.2839,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL ENTE EMISOR AMPLÍA LA VENTA DEL BONO BCB  EN DÓLARES HASTA EL 31 DE DICIEMBRE DE 2025",
+    "date": "2025-01-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-02_BONO%20BCB%20DOLARES.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7095,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN 2024 LAS RESERVAS INTERNACIONALES NETAS INCREMENTARON EN $US 267 MILLONES",
+    "date": "2025-01-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_001_2025_RIN_BCB_OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.8221,
+    "is_hawkish": false
+  },
+  {
+    "title": "CADA VEZ MÁS BOLIVIANOS UTILIZAN MEDIOS ELECTRÓNICOS DE PAGO; EL FAVORITO ES EL QR QUE CRECIÓ EN 4.700%",
+    "date": "2024-12-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP%2060%20MEDIOS%20ELECTRONICOS%20DE%20PAGO.docx_.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4209,
+    "is_hawkish": false
+  },
+  {
+    "title": "ARRANCA LA “SEMANA BCB NAVIDEÑA” RESALTANDO LOS VALORES DE SOLIDARIDAD, ESPERANZA Y UNIÓN ENTRE LOS BOLIVIANOS",
+    "date": "2024-12-16",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_59_SEMANA%20NAVIDE%C3%91A%20DEL%20BCB1.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.452,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN CUATRO MESES, USO DE ACTIVOS VIRTUALES SUPERA LOS $us75 MILLONES Y DINAMIZA EL SISTEMA DE PAGOS NACIONAL",
+    "date": "2024-11-25",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_58_USO_ACTIVOS_VIRTUALES.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3362,
+    "is_hawkish": false
+  },
+  {
+    "title": "DURANTE LA PRESENTE GESTIÓN EL BCB LLEVA ADELANTE PROCESOS DE ADQUISICIÓN DE MATERIAL MONETARIO",
+    "date": "2024-11-12",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_57_BILLETES%20SERIE_B_F_OK.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3495,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DEJA SIN EFECTO LA  RESOLUCIÓN DE DIRECTORIO N°148/2024",
+    "date": "2024-11-11",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_56_Resoluci%C3%B3n_148_2024.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.3844,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PRESENTA EL DISEÑO GANADOR DEL MURAL CONMEMORATIVO DEL BICENTENARIO",
+    "date": "2024-10-21",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-53%20-%20Presentaci%C3%B3n%20Mural%20BCB2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3917,
+    "is_hawkish": false
+  },
+  {
+    "title": "BANCO CENTRAL LANZA EL BONO BCB NAVIDEÑO 2024 CON LAS CONDICIONES MÁS COMPETITIVAS DEL MERCADO",
+    "date": "2024-10-03",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP52%20BONO%20BCB%20NAVIDE%C3%91O%202024.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5752,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PAGÓ EL 82% DEL TOTAL DE LA DEUDA PÚBLICA EXTERNA PROGRAMADA PARA 2024",
+    "date": "2024-09-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP51_30sep24%20PagoDeudaExterna.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.2638,
+    "is_hawkish": false
+  },
+  {
+    "title": "EN SOLO TRES MESES LAS OPERACIONES CON ACTIVOS VIRTUALES CRECIERON EN MÁS DEL 100%",
+    "date": "2024-09-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/26sep24%20CP50%20ACTIVOS%20VIRTUALES.PDF",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3385,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA PROMUEVE INNOVACIONES DIGITALES CON LAS EWALLET Y LAS TARJETAS ELECTRÓNICAS VIRTUALES",
+    "date": "2024-09-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/25sep24_CP49%20EWALLET%20Y%20TARJETAS%20ELECTRONICAS%20VIRTUALES.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3755,
+    "is_hawkish": false
+  },
+  {
+    "title": "PRESIDENTE DEL BCB ATIENDE INVITACIÓN OFICIAL DEL REINO UNIDO PARA FORTALECER LAS RELACIONES BILATERALES",
+    "date": "2024-09-14",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_48%20VisitapresidenteBCBLondres_1f%20%281%29_0.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3946,
+    "is_hawkish": false
+  },
+  {
+    "title": "CIERRA EL 17 ENCUENTRO DE ECONOMISTAS DE BOLIVIA CON UN PROFUNDO ANÁLISIS DEL ESCENARIO ACTUAL Y LOS DESAFÍOS Y OPORTUNIDADES PARA LA REGIÓN",
+    "date": "2024-09-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_47%2017EncuentroEconomistas2024_1.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.4672,
+    "is_hawkish": false
+  },
+  {
+    "title": "CON UNA MASIVA PARTICIPACIÓN EL BCB INAUGURA EL 17 ENCUENTRO DE ECONOMISTAS DE BOLIVIA EN SUCRE",
+    "date": "2024-09-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_46%2017EncuentroEnonomistasB.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4216,
+    "is_hawkish": false
+  },
+  {
+    "title": "LAS RIN SE MANTIENEN  ESTABLES Y CON TENDENCIA POSITIVA",
+    "date": "2024-09-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_45%20ReservasInternacionales2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5688,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB COMUNICA QUE LA PROVISIÓN DE BILLETES ES UNA OPERACIÓN HABITUAL PARA REPONER EL MATERIAL  MONETARIO DESTRUIDO Y EN MAL ESTADO",
+    "date": "2024-07-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-37%20-%20Reposici%C3%B3nMaterialMonetario2.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.7291,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB EN COORDINACIÓN CON ASFI Y UIF ACTUALIZA NORMATIVA EN TORNO A LOS ACTIVOS VIRTUALES",
+    "date": "2024-06-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_35%20NormativaActivosVirtuales.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4425,
+    "is_hawkish": false
+  },
+  {
+    "title": "DEVOLUCIÓN DE CAPITAL Y PAGO DE INTERESES DEL “BONO BCB EN DÓLARES” MUESTRA LA SOLVENCIA DEL ENTE EMISOR",
+    "date": "2024-05-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_33%20PagoInteresesBonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.833,
+    "is_hawkish": false
+  },
+  {
+    "title": "CENTENARES DE NIÑAS Y NIÑOS DE LA PAZ CELEBRAN EL “DÍA DEL NIÑO BCB”",
+    "date": "2024-04-12",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_25%20D%C3%ADaDelNi%C3%B1oBCB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3705,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ENTREGA NUEVO LOTE DE EQUIPOS DE OFICINA Y MOBILIARIO A UNIDADES EDUCATIVAS DE PROVINCIAS PACEÑAS",
+    "date": "2024-03-27",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_22%20EntregaEquiposElAlto.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.7852,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BONO BCB EN DÓLARES SUPERA LOS $US 8,8 MILLONES CON LA INVERSIÓN DE PERSONAS JURÍDICAS",
+    "date": "2024-03-05",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_16%20AumentoColocaci%C3%B3nBonos.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4897,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB EMITE EL “BONO BCB EN DÓLARES” EN COORDINACIÓN CON ASOBAN",
+    "date": "2024-02-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_11%20LanzamientoBonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.7218,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB Y LA BANCA NACIONAL SE REÚNEN PARA VIABILIZAR EL LANZAMIENTO DE BONOS EN DÓLARES ESTADOUNIDENSES",
+    "date": "2024-02-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_10%20BonoBCBD%C3%B3lares.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.8557,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA DENUNCIA USO DE SU NOMBRE Y PRESTIGIO EN LA VENTA DE FICHAS PARA ADQUIRIR DÓLARES ESTADOUNIDENSES",
+    "date": "2024-02-16",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_09%20BCBDenunciaFichas.pdf",
+    "stance_label": "restricción de divisas o control de cambios",
+    "intensity_score": 0.4118,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA VERSIONES ERRÓNEAS SOBRE LA ADMINISTRACIÓN DE LAS RESERVAS DE ORO",
+    "date": "2024-02-08",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_7%20ComunicadoFitch.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3015,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB PROMUEVE EL ACERCAMIENTO DE INVERSORES Y EJECUTIVOS DE BANCA BRITÁNICOS CON SECTORES PRODUCTIVOS DEL PAÍS",
+    "date": "2024-02-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_6%20BCBVisitaBancosBrit%C3%A1nicos.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3357,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB IMPULSA LAS FINANZAS VERDES EN BENEFICIO DEL MEDIO AMBIENTE",
+    "date": "2024-01-11",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_03_BCB_impulsa_las_Finanzas_Verdes.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3298,
+    "is_hawkish": false
+  },
+  {
+    "title": "EVOLUCIÓN DE LAS RESERVAS INTERNACIONALES EN 2023 COADYUVARON AL CRECIMIENTO Y A LA ESTABILIDAD DE LA ECONOMÍA",
+    "date": "2024-01-04",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-2%20ReservasInternacionales2023-2.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6704,
+    "is_hawkish": false
+  },
+  {
+    "title": "A NOVIEMBRE DE 2023 LAS REMESAS  REGISTRARON RÉCORD HISTÓRICO",
+    "date": "2024-01-02",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_01%20%20RemesasNoviembre2023.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.323,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB PRESENTA MUESTRA FOTOGRÁFICA: “A 20 AÑOS DE LA GUERRA DEL GAS, RECUPERANDO LA MEMORIA COLECTIVA DEL PUEBLO BOLIVIANO”",
+    "date": "2023-11-30",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_84%20MuestraPl%C3%A1stica.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3255,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB ACLARA SOBRE LA COMPRA DE ORO EN MERCADO INTERNO PARA EL FORTALECIMIENTO DE LAS RIN",
+    "date": "2023-11-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_83%20Aclaraci%C3%B3nCompraOroBCB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3142,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL LANZA EL “BONO BCB NAVIDEÑO” QUE PODRÁ SER ADQUIRIDO EN UFV Y BOLIVIANOS",
+    "date": "2023-11-07",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_80%20BCBBonoNavide%C3%B1o2023.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.9056,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA INAUGURA EL DECIMOSEXTO ENCUENTRO DE ECONOMISTAS DE BOLIVIA EN COCHABAMBA",
+    "date": "2023-10-26",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/Comunicado%20de%20prensa%20inicio%2016EEB%20ok.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4841,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BANCO CENTRAL DE BOLIVIA COMPRA MÁS DE UNA TONELADA DE ORO FINO",
+    "date": "2023-10-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/NP_77%20CompraToneladaOro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.6771,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB DA CUMPLIMIENTO A LA LEY 1503 DE COMPRA DE ORO",
+    "date": "2023-09-15",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_75%20CompraDeOro.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4123,
+    "is_hawkish": false
+  },
+  {
+    "title": "ACLARACIÓN SOBRE IMPRECISIÓN DEL SALDO ADEUDADO POR LAS EMPRESAS PÚBLICAS CON EL BCB",
+    "date": "2023-08-23",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_72%20Aclaraci%C3%B3nMedioDePrensa.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3278,
+    "is_hawkish": false
+  },
+  {
+    "title": "BOLIVIA PUNCTUALLY PAYS PRINCIPAL AND INTEREST ON SOVEREIGN BONDS ISSUED IN 2013",
+    "date": "2023-08-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/Press%20release.%20Bolivia%20puntually%20pays%20bonds%20issued%20in%202013.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.3009,
+    "is_hawkish": false
+  },
+  {
+    "title": "BOLIVIA PAGA PUNTUALMENTE Y EN SU TOTALIDAD CAPITAL E INTERESES DE BONO SOBERANO EMITIDO EN 2013",
+    "date": "2023-08-22",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_71%20PagoBonoSoberano2013.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3544,
+    "is_hawkish": false
+  },
+  {
+    "title": "SE AMPLÍA EL PLAZO DE ENTREGA DE INVESTIGACIONES PARA EL 16 ENCUENTRO DE ECONOMISTAS DE BOLIVIA",
+    "date": "2023-08-15",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_70%20Ampliaci%C3%B3nPlazo16EEB.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.4424,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB VELA POR LA ESTABILIDAD ECONÓMICA Y FOMENTA LA ACTIVIDAD CULTURAL EN EL PAÍS: CELEBRACIÓN DE LOS 250 AÑOS DE LA CASA NACIONAL DE MONEDA",
+    "date": "2023-07-31",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_69%20CasaDeMoneda250A%C3%B1os.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5339,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB VELA POR LA ESTABILIDAD ECONÓMICA Y FOMENTA LA ACTIVIDAD CULTURAL EN EL PAÍS: INAUGURACIÓN DE LA CASA MUSEO INÉS CÓRDOVA-GIL IMANÁ",
+    "date": "2023-07-28",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_68%20CasaMuseoGilIman%C3%A1.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4721,
+    "is_hawkish": false
+  },
+  {
+    "title": "EL BCB CUMPLE PUNTUALMENTE CON LA PROGRAMACIÓN DE LAS OBLIGACIONES DE LA DEUDA PÚBLICA EXTERNA",
+    "date": "2023-07-27",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_67%20PAGODEDEUDA.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3849,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB CELEBRA 95 AÑOS DE VIDA INSTITUCIONAL AL SERVICIO DE LA ECONOMÍA BOLIVIANA",
+    "date": "2023-07-20",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_64%20AniversarioBCB.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.9812,
+    "is_hawkish": false
+  },
+  {
+    "title": "El BCB RECIBE PREMIO AL MEJOR STAND TECNOLÓGICO EN LA PAZ EXPONE 2023",
+    "date": "2023-07-17",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_63%20LA%20PAZ%20EXPONE%20BCB.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.5344,
+    "is_hawkish": false
+  },
+  {
+    "title": "AL PRIMER TRIMESTRE 2023 LA INVERSIÓN EXTRANJERA DIRECTA PRESENTÓ FLUJO POSITIVO DE $US 60 MILLONES",
+    "date": "2023-07-14",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_62%20Inversi%C3%B3nExtranjera.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3613,
+    "is_hawkish": false
+  },
+  {
+    "title": "AL PRIMER CUATRIMESTRE, LAS RESERVAS INTERNACIONALES SE MANTIENEN EN NIVELES ESTABLES PESE A LOS ATAQUES ESPECULATIVOS",
+    "date": "2023-07-06",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_60%20ReservasInternacionales.pdf",
+    "stance_label": "estabilidad de reservas y liquidez",
+    "intensity_score": 0.4763,
+    "is_hawkish": false
+  },
+  {
+    "title": "BCB LANZA XVI JORNADA MONETARIA: “POLÍTICA MONETARIA Y FINANZAS VERDES, LA RUTA AL DESARROLLO SOSTENIBLE”",
+    "date": "2023-07-03",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_59%20XVIJornadaMonetaria.pdf",
+    "stance_label": "comunicado administrativo o rutinario",
+    "intensity_score": 0.3353,
+    "is_hawkish": false
+  },
+  {
+    "title": "LA TASA DE REFERENCIA (TRe) EN MONEDA NACIONAL DISMINUYE A 2,77% PARA EL MES DE JULIO",
+    "date": "2023-07-01",
+    "type": "notas-prensa",
+    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP_58%20Reducci%C3%B3nTRe.pdf",
+    "stance_label": "ajuste de política monetaria o régimen cambiario",
+    "intensity_score": 0.3353,
+    "is_hawkish": false
+  }
+]
