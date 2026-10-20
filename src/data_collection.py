@@ -2,7 +2,7 @@ import io
 import json
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -19,7 +19,7 @@ BASE_URL = "https://www.bcb.gob.bo"
 BCB_EVOLUTIVO_BASE = "https://www.bcb.gob.bo/grafico_evolutivo/download.php"
 
 # Dictionary to map Spanish month names to integers for datetime parsing
-SPANISH_MONTHS = {
+months = {
     "enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
     "julio": 7, "agosto": 8, "septiembre": 9, "octubre": 10,
     "noviembre": 11, "diciembre": 12,
@@ -68,21 +68,20 @@ def parse_bcb_date(date_text: str) -> datetime | None:
         return None
     
     # Normalize whitespace and clean commas
-    date_text = " ".join(str(date_text).replace(",", "").split())
+    cleaned_text = " ".join(str(date_text).replace(",", "").split()).lower()
     
-    match = re.search(r"(\d{1,2})\s+(?:de\s+)?(\w+)\s+(?:de\s+)?(\d{4})", date_text, re.IGNORECASE)
-    if not match:
-        return None
-
-    day, month_text, year = match.groups()
-    month = SPANISH_MONTHS.get(month_text.lower().strip())
+    match = re.search(r'(\d{1,2})\s*(?:de|\/|-|\s+)\s*([a-z]{3,10})(?:\s*(?:de|\/|-|\s+)\s*(\d{4}))?', cleaned_text)
     
-    if month:
-        try:
-            return datetime(int(year), month, int(day))
-        except ValueError:
-            # Handles invalid dates like Feb 30 or Dec 32
-            return None
+    if match:
+        day = int(match.group(1))
+        month_str = match.group(2)
+        year_str = match.group(3)
+        
+        month = months.get(month_str[:3]) or months.get(month_str)
+        year = int(year_str) if year_str else datetime.now().year  
+        
+        if month:
+            return datetime(year, month, day)
             
     return None
 
@@ -91,6 +90,14 @@ def extract_pdf_text(pdf_url: str) -> str:
     Downloads a PDF from a URL and extracts its text content.
     Includes a safeguard to warn if the PDF is likely a scanned image (very little text).
     """
+    if "chrome-extension://" in pdf_url:
+        match = re.search(r'(https?://.+)', pdf_url)
+        if match:
+            pdf_url = match.group(1)  
+        else:
+            print(f"    ⚠ URL inválida (prefijo de extensión): {pdf_url}")
+            return ""
+    
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     try:
         response = requests.get(pdf_url, headers=headers, timeout=15)
@@ -120,7 +127,8 @@ def extract_pdf_text(pdf_url: str) -> str:
 
 def scrape_communications_page(page_num: int, doc_type: str = "comunicados") -> list[dict]:
     """
-    Scrapes a single page of BCB communications or press notes.
+    Scrapes a single page of BCB communications or press notes, ensuring 
+    the PDF link is explicitly extracted.
     """
     url = f"{BASE_URL}/?q={doc_type}"
     if page_num > 0:
@@ -141,12 +149,20 @@ def scrape_communications_page(page_num: int, doc_type: str = "comunicados") -> 
     entries = soup.select("div.view-content .views-row") or soup.select("div.view-content > div")
 
     for entry in entries:
-        link_tag = entry.find("a", href=True)
-        if not link_tag:
+        pdf_link_tag = entry.find("a", href=lambda href: href and (".pdf" in href.lower() or "webdocs" in href.lower()))
+        
+        if not pdf_link_tag:
+            pdf_link_tag = entry.find("a", href=True)
+            
+        if not pdf_link_tag:
             continue
             
-        title = link_tag.get_text(strip=True)
-        pdf_url = urljoin(BASE_URL, link_tag["href"])
+        title = pdf_link_tag.get_text(strip=True)
+        if not title:
+            title_tag = entry.find(["h2", "h3", "h4", "strong"])
+            title = title_tag.get_text(strip=True) if title_tag else "Sin título"
+            
+        pdf_url = urljoin(BASE_URL, pdf_link_tag["href"])
         
         # Two-tier date extraction strategy
         date_text = ""
@@ -155,9 +171,9 @@ def scrape_communications_page(page_num: int, doc_type: str = "comunicados") -> 
             date_text = date_span.get_text(strip=True)
         else:
             full_text = entry.get_text(" ", strip=True)
-            match = re.search(r"(\d{1,2})\s+(?:de\s+)?(\w+)\s+(?:de\s+)?(\d{4})", full_text, re.IGNORECASE)
+            match = re.search(r"(\d{1,2})\s+(?:de\s+)?([a-zA-ZáéíóúÁÉÍÓÚ]+)\s+(?:de\s+)?(\d{4})", full_text, re.IGNORECASE)
             if match:
-                date_text = f"{match.group(1)} {match.group(2)} {match.group(3)}"
+                date_text = f"{match.group(1)} de {match.group(2)} de {match.group(3)}"
 
         items.append({
             "title": title, 
@@ -185,6 +201,7 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
             if not items:
                 break
             
+            valid_parsed_count = 0
             older_items_count = 0
             
             for item in items:
@@ -192,6 +209,8 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
                 if not parsed_date:
                     continue  # Skip items with unparseable dates
                     
+                valid_parsed_count += 1
+                
                 if parsed_date < cutoff_date:
                     older_items_count += 1
                     continue
@@ -212,7 +231,7 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
                 })
             
             # If all parsed items on the page are older than cutoff_date, stop category pagination
-            if items and older_items_count == len(items):
+            if valid_parsed_count > 0 and older_items_count == valid_parsed_count:
                 stop_scraping_category = True
                 
             page += 1
@@ -254,7 +273,7 @@ def deduplicate_communications(raw_items: list) -> list:
     return unique_items
 
 # Main pipeline
-def run_collection(start_date: datetime = datetime(2023, 6, 29)):
+def run_collection(start_date: datetime = datetime(2025, 6, 26)):
     """
     Main execution function to orchestrate the data collection pipeline.
     """
@@ -266,9 +285,12 @@ def run_collection(start_date: datetime = datetime(2023, 6, 29)):
     download_official_exchange_rate()
     
     print("\n2. Scraping BCB communications and press notes...")
-    communications = collect_relevant_communications(cutoff_date=start_date)
+    raw_communications = collect_relevant_communications(cutoff_date=start_date)
     
-    print("\n3. Saving raw communications data...")
+    print("\n3. Deduplicating communications...")
+    communications = deduplicate_communications(raw_communications)
+    
+    print("\n4. Saving raw communications data...")
     output_path = DATA_RAW_DIR / "raw_communications.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(communications, f, ensure_ascii=False, indent=2)
@@ -277,4 +299,8 @@ def run_collection(start_date: datetime = datetime(2023, 6, 29)):
     print("=" * 60)
 
 if __name__ == "__main__":
-    run_collection(start_date=datetime(2023, 6, 29))
+    # to save execution time, while keeping full historical exchange rate data.
+    one_year_ago = datetime.now() - timedelta(days=365)
+    
+    print(f"🎯 Target: Scraping communications from {one_year_ago.strftime('%Y-%m-%d')} to present.")
+    run_collection(start_date=one_year_ago)
