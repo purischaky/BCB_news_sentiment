@@ -12,6 +12,7 @@ plt.rcParams.update({"font.family": "sans-serif", "font.size": 10})
 # Configuration & Paths 
 DATA_PROCESSED_PATH = Path("data/processed/processed_signals.json")
 REPORT_PATH = Path("outputs/reports/sme_contract_risk_matrix.csv")
+BACKTEST_PATH = Path("outputs/reports/nlp_fx_backtest_summary.csv")
 OUTPUTS_FIGURES_DIR = Path("outputs/figures")
 OUTPUTS_FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -116,6 +117,43 @@ def plot_nlp_signal_distribution(
     print(f"  ✓ Saved NLP signal breakdown to: {output_path}")
     return output_path
 
+def plot_nlp_vs_fx_volatility(
+    input_path: Path = BACKTEST_PATH,
+    output_filename: str = "nlp_vs_fx_correlation.png"
+) -> Path:
+    """
+    Generates a regression scatter plot linking NLP hawkish intensity scores 
+    to subsequent exchange rate volatility based on econometric backtest results.
+    """
+    if not input_path.exists():
+        print(f"  ⚠ Skipping NLP vs FX correlation plot: {input_path} not found.")
+        return input_path
+
+    df = pd.read_csv(input_path)
+    fig, ax = plt.subplots(figsize=(8, 5))
+    
+    sns.regplot(
+        data=df,
+        x="intensity_score",
+        y="subsequent_fx_vol",
+        ax=ax,
+        color="#2b5c8f",
+        scatter_kws={"alpha": 0.7},
+        line_kws={"color": "#d95f02"}
+    )
+    
+    ax.set_title("Predictive Power of BCB Communications:\nNLP Intensity vs. Subsequent 5-Day Exchange Rate Volatility", fontsize=11, fontweight="bold", pad=12)
+    ax.set_xlabel("NLP Hawkish Intensity Score", fontsize=10)
+    ax.set_ylabel("Realized FX Volatility (5-Day Window)", fontsize=10)
+
+    output_path = OUTPUTS_FIGURES_DIR / output_filename
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300)
+    plt.close()
+
+    print(f"  ✓ Saved NLP vs FX correlation plot to: {output_path}")
+    return output_path
+
 def run_visualizations():
     """Main execution function to generate all executive visual figures."""
     print("=" * 50)
@@ -127,6 +165,9 @@ def run_visualizations():
 
     print("\n2. Generating NLP Stance Distribution Chart...")
     plot_nlp_signal_distribution()
+
+    print("\n3. Generating NLP vs. FX Volatility Regression Plot...")
+    plot_nlp_vs_fx_volatility()
 
     print("\n✓ Visual Analytics Generation Complete!")
     print("=" * 50)

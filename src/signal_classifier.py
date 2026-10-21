@@ -29,8 +29,8 @@ class BCBSignalClassifier:
 
     def classify_statement(self, text: str) -> dict:
         """
-        Evaluates document text to assign policy stance, confidence score, 
-        and a boolean flag indicating a strong hawkish/risk signal.
+        Evaluates document text across chunks to capture policy stance and intensity 
+        across the complete document without truncation loss.
         """
         if not text or len(text.strip()) < 50:
             return {
@@ -39,38 +39,48 @@ class BCBSignalClassifier:
                 "is_hawkish": False
             }
 
-        # Truncate to first 800 characters as a first-pass character safeguard
-        summary_text = text[:800]
+        # Split text into chunks of ~1,000 characters to fit safely within token limits
+        chunk_size = 1000
+        chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
+        
+        max_intensity = 0.0
+        best_label = "comunicado administrativo o rutinario"
+        highest_hawkish = False
 
-        try:
-            # Enforce explicit token truncation at the pipeline level to prevent DeBERTa attention crashes
-            result = self.classifier(
-                summary_text, 
-                candidate_labels=self.candidate_labels,
-                truncation=True,
-                max_length=512
-            )
-            
-            top_label = result["labels"][0]
-            top_score = float(result["scores"][0])
+        for chunk in chunks:
+            if len(chunk.strip()) < 30:
+                continue
 
-            is_hawkish = (top_score >= 0.50) and (
-                "restricción" in top_label or "ajuste" in top_label
-            )
+            try:
+                result = self.classifier(
+                    chunk, 
+                    candidate_labels=self.candidate_labels,
+                    truncation=True,
+                    max_length=512
+                )
+                
+                top_label = result["labels"][0]
+                top_score = float(result["scores"][0])
 
-            return {
-                "stance_label": top_label,
-                "intensity_score": round(top_score, 4),
-                "is_hawkish": is_hawkish
-            }
+                is_hawkish = (top_score >= 0.50) and (
+                    "restricción" in top_label or "ajuste" in top_label
+                )
 
-        except Exception as e:
-            print(f"    ⚠ Warning: Failed to classify document chunk: {e}")
-            return {
-                "stance_label": "comunicado administrativo o rutinario",
-                "intensity_score": 0.0,
-                "is_hawkish": False
-            }
+                # Track the strongest policy signal found across any section of the PDF
+                if top_score > max_intensity:
+                    max_intensity = top_score
+                    best_label = top_label
+                    highest_hawkish = is_hawkish
+
+            except Exception as e:
+                # Silently skip malformed chunks and continue processing the rest
+                continue
+
+        return {
+            "stance_label": best_label,
+            "intensity_score": round(max_intensity, 4),
+            "is_hawkish": highest_hawkish
+        }
 
 def process_raw_communications(
     input_path: Path = DATA_RAW_PATH, 
