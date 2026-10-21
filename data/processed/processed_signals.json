@@ -234,15 +234,6 @@
     "is_hawkish": false
   },
   {
-    "title": "INFORME DEL BID DESTACA ROL DEL BCB EN EL DESARROLLO DE UN SISTEMA DE PAGOS MODERNO E INCLUSIVO",
-    "date": "2025-10-21",
-    "type": "notas-prensa",
-    "pdf_url": "https://www.bcb.gob.bo/webdocs/10_notas_prensa/CP-48%20Informe%20BID%20sistema%20de%20pagos_okok.pdf",
-    "stance_label": "estabilidad de reservas y liquidez",
-    "intensity_score": 0.9306,
-    "is_hawkish": false
-  },
-  {
     "title": "Audiencia Rendición de Cuentas Inicial 2026",
     "date": "2026-05-04",
     "type": "comunicados",
@@ -456,15 +447,6 @@
     "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-50%20Bono%20BCB%20Bicentenario%20cierre%20OK.pdf",
     "stance_label": "estabilidad de reservas y liquidez",
     "intensity_score": 0.9419,
-    "is_hawkish": false
-  },
-  {
-    "title": "INFORME DEL BID DESTACA ROL DEL BCB EN EL DESARROLLO DE UN SISTEMA DE PAGOS MODERNO E INCLUSIVO",
-    "date": "2025-10-21",
-    "type": "comunicados",
-    "pdf_url": "https://www.bcb.gob.bo/webdocs/11_comunicados/CP-48%20Informe%20BID%20sistema%20de%20pagos_okok.pdf",
-    "stance_label": "estabilidad de reservas y liquidez",
-    "intensity_score": 0.9306,
     "is_hawkish": false
   },
   {

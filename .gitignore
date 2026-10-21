@@ -1,5 +1,15 @@
 .venv/
 .venv*
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
 .DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+data/raw/
+data/processed/
