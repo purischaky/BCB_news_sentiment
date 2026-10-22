@@ -14,19 +14,13 @@ Under Bolivia's flexible exchange rate framework (Ministerial Resolution No. 245
 ## Architecture & Data Pipeline
 ```text
 ├── data/
-│   ├── raw/                 # Raw BCB communications (JSON/PDF) & official exchange rate CSV
-│   └── processed/           # Zero-shot NLP classified signals dataset
+│   ├── raw/                 
+│   └── processed/           
 ├── outputs/
-│   ├── figures/             # Distribution plots, backtest regressions, and density charts
-│   └── reports/             # Risk matrix scenarios and backtest summary CSVs
+│   ├── figures/             
+│   └── reports/             
 ├── src/
-│   ├── add_manual_pdf.py    # Batch processing utility for official announcement PDFs
-│   ├── data_collection.py   # Resilient BCB web scraper & exchange rate historical downloader
-│   ├── signal_classifier.py # Zero-Shot NLP classifier using mDeBERTa-v3
-│   ├── backtest_signals.py  # Econometric event backtest (NLP score vs. trading-day volatility)
-│   ├── monte_carlo.py       # Illustrative Geometric Brownian Motion (GBM) risk simulation
-│   └── visualize_results.py # Publication-style figures using Matplotlib and Seaborn
-└── tests/                   # Pytest suite verifying pipeline logic and numerical bounds
+└── tests/                   
 ```
 
 ## Methodology & Model Mechanics
@@ -38,12 +32,12 @@ Official communications are evaluated using Hugging Face's MoritzLaurer/mDeBERTa
     - estabilidad de reservas y liquidez
     - comunicado administrativo o rutinario
 
-Classifier Mechanics: Documents are processed in chunked segments to fit model context windows. The classifier identifies the top-ranked label and its associated confidence score (intensity_score). A document is classified as hawkish / restrictive (is_hawkish = True) if the top score is $\ge 0.50$ and the top label explicitly contains restriction or adjustment keywords (restricción or ajuste).
+Classifier Mechanics: Documents are processed in chunked segments to fit model context windows. The classifier identifies the top-ranked label and its associated zero-shot confidence score. In the codebase, this metric is stored as the intensity_score field; however, it should be interpreted strictly as an exploratory policy-signal score (a relative confidence metric from the NLP model), not a calibrated macroeconomic measurement. A document is classified as hawkish / restrictive (is_hawkish = True) if this policy-signal score is $\ge 0.50$ and the top label explicitly contains restriction or adjustment keywords (restricción or ajuste).
 
 ### 2. Econometric Backtesting (src/backtest_signals.py)
 To test the empirical relationship between policy statements and exchange rate dynamics, the backtesting module measures realized volatility over strict post-publication trading days ($T+1$ to $T+5$).
     - Event Aggregation: When multiple press releases occur on the same calendar date, events are aggregated at the distinct date level to prevent duplicate observation bias.
-    - Empirical Findings: Across distinct communication event dates, the Pearson correlation between NLP hawkish intensity scores and subsequent 5-day trading volatility was -0.0740.
+    - Empirical Findings: Across 41 event dates, the correlation between the classifier score and subsequent exchange-rate volatility was approximately −0.104. This is a weak association in this sample and should be treated as exploratory.
     - Economic Interpretation: Official central bank statements operate primarily as administrative guidance rather than immediate short-term market volatility shocks.
 
 ### 3. Scenario-Based Risk Simulation (src/monte_carlo.py)
@@ -54,8 +48,8 @@ Because empirical backtesting shows near-zero short-term volatility correlation,
 ## Empirical Results & Backtesting
 
 1. Signaling Power (NLP Stance vs. FX Volatility)
-- Pearson Correlation: $r = -0.0740$
-- Interpretation: The empirical correlation between central bank hawkish intensity scores and subsequent 5-day exchange rate volatility is near zero. This indicates that official central bank statements in managed flexible regimes act primarily as administrative guidance and anchoring signals rather than drivers of immediate short-term market shocks.
+- Pearson Correlation: $r \approx -0.104$ (across 41 distinct event dates)
+- Interpretation: The empirical correlation between the NLP-derived policy-signal scores (intensity_score) and subsequent 5-day exchange rate volatility is near zero. This indicates that official central bank statements in managed flexible regimes act primarily as administrative guidance and anchoring signals rather than drivers of immediate short-term market shocks.
 
 2. SME Executive Risk Matrix ($100,000 USD Import Contract)Below is an excerpt from outputs/reports/sme_contract_risk_matrix.csv:
 
@@ -97,3 +91,12 @@ pytest -v
 - AI Collaboration: AI tools were utilized to assist in drafting boilerplate web scraping handlers, configuring Hugging Face zero-shot pipelines, refining Seaborn styling parameters, and structuring test coverage.
 - Validation & Character Encoding: All source files, CSV reports, and Markdown documentations are encoded in UTF-8 without BOM to preserve proper rendering of Spanish characters and mathematical notation.
 
+## Data Snapshot & Temporal Disclaimer
+The datasets included in this repository (`data/raw/` and `data/processed/`) represent a **static snapshot of the Bolivian macroeconomic environment and central bank communications as of October 21, 2026**. 
+
+Because this project relies on live web scraping from the Central Bank of Bolivia (BCB), running the data collection pipeline (`src/data_collection.py`) at a later date will automatically ingest newer communications and exchange rate data. 
+
+**Please note the following when reproducing this analysis:**
+* **Dynamic Market Conditions:** Financial markets and central bank policies are highly dynamic. Running this pipeline with post-October 2026 data may yield different NLP signal distributions, backtesting correlations, and Monte Carlo volatility parameters.
+* **Reproducibility:** The empirical results, scatter plots, and risk matrices documented in this README are strictly tied to the provided historical snapshot. This ensures the reproducibility of the Q3 2026 analysis, regardless of when the repository is cloned.
+* **No Forward-Looking Guarantee:** The Monte Carlo simulations and NLP classifications are intended for exploratory, educational, and portfolio demonstration purposes only. They do not constitute financial advice or guarantee future market behavior.

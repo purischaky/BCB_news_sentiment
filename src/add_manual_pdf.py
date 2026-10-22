@@ -62,7 +62,7 @@ MANUAL_ENTRIES = [
     {
         "title": "EL BANCO CENTRAL REALIZARÁ OPERACIONES DE COMPRA Y VENTA DE DÓLARES PARA MITIGAR FLUCTUACIONES EXTREMAS EN SU PRECIO",
         "pdf_url": "https://www.bcb.gob.bo/webdocs/files_noticias/NP%2015-30%20JULIO.pdf",
-        "date": "2026-06-30",
+        "date": "2026-07-30",
         "date_text": "30 de julio de 2026",
         "type": "notas-prensa"
     },
