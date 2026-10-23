@@ -12,6 +12,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
+import unicodedata
 
 # Configuration & Constants 
 DATA_RAW_DIR = Path("data/raw")
@@ -249,32 +250,38 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
 
 # Deduplication Functions
 def normalize_text(text: str) -> str:
+    """Lowercase, strip accents, drop 'comunicado -' style prefixes and punctuation."""
     if not text:
         return ""
-    text = text.lower().strip()
-    text = re.sub(r'\s+', ' ', text)
-    return text
+    text = unicodedata.normalize("NFKD", text.lower().strip())
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"^(comunicado|nota de prensa)\s*[-:]\s*", "", text)
+    text = re.sub(r"[^a-z0-9 ]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 def deduplicate_communications(raw_items: list) -> list:
     """
-    Deduplicates raw scraped communications by canonical URL or (date + normalized title).
+    Deduplicates by (date + normalized title). The same press release is often
+    published under two sections with different URLs, so URL alone is not enough.
     """
     seen_keys = set()
     unique_items = []
-    
-    sorted_items = sorted(raw_items, key=lambda x: x.get('type', ''), reverse=True)
-    
+
+    # 'notas-prensa' sorts before 'comunicados' with reverse=True, so it is kept first
+    sorted_items = sorted(raw_items, key=lambda x: x.get("type", ""), reverse=True)
+
     for item in sorted_items:
-        pdf_url = item.get('pdf_url', '').strip()
-        date = item.get('date', '').strip()
-        title_norm = normalize_text(item.get('title', ''))
-        
-        dedup_key = pdf_url if pdf_url else f"{date}::{title_norm}"
-        
+        date = item.get("date", "").strip()
+        title_norm = normalize_text(item.get("title", ""))
+        pdf_url = item.get("pdf_url", "").strip()
+
+        dedup_key = f"{date}::{title_norm}" if title_norm else pdf_url
+
         if dedup_key not in seen_keys:
             seen_keys.add(dedup_key)
             unique_items.append(item)
-            
+
     return unique_items
 
 # Main Pipeline Execution

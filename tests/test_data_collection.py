@@ -6,8 +6,10 @@ import pytest
 import requests
 
 from src.data_collection import (
+    deduplicate_communications,
     download_official_exchange_rate,
     extract_pdf_text,
+    normalize_text,
     parse_bcb_date,
     scrape_communications_page,
 )
@@ -82,3 +84,26 @@ def test_scrape_communications_page_network_error():
     items = scrape_communications_page(page_num=0, doc_type="comunicados", session=session)
 
     assert items == []
+    
+# Deduplication 
+def test_normalize_text_removes_accents_prefix_and_case():
+    assert normalize_text("COMUNICADO - Revocatoria de Testimonios") == "revocatoria de testimonios"
+    assert normalize_text("Difusión de Resultados") == "difusion de resultados"
+
+def test_deduplicate_removes_same_document_with_different_urls():
+    items = [
+        {"title": "REVOCATORIA DE TESTIMONIOS", "date": "2026-03-05",
+         "pdf_url": "https://bcb.gob.bo/a.pdf", "type": "notas-prensa"},
+        {"title": "Revocatoria de Testimonios", "date": "2026-03-05",
+         "pdf_url": "https://bcb.gob.bo/b.pdf", "type": "comunicados"},
+    ]
+    assert len(deduplicate_communications(items)) == 1
+
+def test_deduplicate_keeps_same_title_on_different_dates():
+    items = [
+        {"title": "REVOCATORIA DE TESTIMONIOS", "date": "2026-03-05",
+         "pdf_url": "https://bcb.gob.bo/a.pdf", "type": "notas-prensa"},
+        {"title": "REVOCATORIA DE TESTIMONIOS", "date": "2026-02-11",
+         "pdf_url": "https://bcb.gob.bo/b.pdf", "type": "notas-prensa"},
+    ]
+    assert len(deduplicate_communications(items)) == 2
