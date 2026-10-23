@@ -195,7 +195,7 @@ def collect_relevant_communications(cutoff_date: datetime) -> list[dict]:
     # Open temporary JSON lines file for incremental writes
     with open(temp_jsonl_path, "w", encoding="utf-8") as f_out:
         for doc_type in doc_types:
-            print(f"  Scraping category '{doc_type}' (stopping at {cutoff_date.strftime('%Y-%m-%dณ์')})...")
+            print(f"  Scraping category '{doc_type}' (stopping at {cutoff_date.strftime('%Y-%m-%d')})...")
             page = 0
             stop_scraping_category = False
             
