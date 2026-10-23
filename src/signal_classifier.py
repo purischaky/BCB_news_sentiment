@@ -3,7 +3,7 @@ from pathlib import Path
 from transformers import pipeline
 
 # Configuration & Paths 
-DATA_RAW_PATH = Path("data/raw/raw_communications.json")
+INPUT_PATH = Path("data/processed/communications_clean.json")
 DATA_PROCESSED_DIR = Path("data/processed")
 DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -83,7 +83,7 @@ class BCBSignalClassifier:
         }
 
 def process_raw_communications(
-    input_path: Path = DATA_RAW_PATH, 
+    input_path: Path = INPUT_PATH, 
     output_filename: str = "processed_signals.json"
 ) -> Path:
     """
@@ -91,7 +91,7 @@ def process_raw_communications(
     and saves the enriched dataset to data/processed/.
     """
     if not input_path.exists():
-        raise FileNotFoundError(f"Input file not found at {input_path}. Run src/data_collection.py first.")
+        raise FileNotFoundError(f"Input file not found at {input_path}. Run python -m src.clean_communications first.")
 
     print(f"Reading raw data from {input_path}...")
     with open(input_path, "r", encoding="utf-8") as f:
