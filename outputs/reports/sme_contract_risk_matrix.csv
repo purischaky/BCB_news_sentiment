@@ -1,7 +1,0 @@
-scenario_name,horizon_days,contract_amount_usd,spot_rate,nlp_hawkish_signal,volatility_multiplier,var_95_hedging_rate,recommended_hedged_cost_bs,required_cash_reserve_buffer_bs
-Baseline (Neutral/Routine),30,100000.0,12.5,False,1.0,13.4293,1342929.9,92929.9
-Post-Policy Statement (High Hawkish Signal),30,100000.0,12.5,True,1.44,13.8649,1386485.66,136485.66
-Baseline (Neutral/Routine),60,100000.0,12.5,False,1.0,13.8334,1383339.73,133339.73
-Post-Policy Statement (High Hawkish Signal),60,100000.0,12.5,True,1.44,14.4722,1447222.7,197222.7
-Baseline (Neutral/Routine),90,100000.0,12.5,False,1.0,14.1721,1417206.98,167206.98
-Post-Policy Statement (High Hawkish Signal),90,100000.0,12.5,True,1.44,14.9298,1492979.87,242979.87

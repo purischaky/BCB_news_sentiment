@@ -53,14 +53,14 @@ Because empirical backtesting shows near-zero short-term volatility correlation,
 
 2. SME Executive Risk Matrix ($100,000 USD Import Contract)Below is an excerpt from outputs/reports/sme_contract_risk_matrix.csv:
 
-| Scenario Name | Horizon (Days) | Spot Rate (Bs/USD) | NLP Hawkish Signal | Volatility Multiplier | 95% VaR Rate (Bs/USD) | Recommended Hedged Cost (Bs) | Required Reserve Buffer (Bs) | 
-|-------------|-------|-------|------|------|---------|------|---------|
-| Baseline (Neutral) | 30 | 12.50 | False | 1.000 | 12.82 | 1,282,000.00 | 32,000.00 |
-| Post-Policy Shock | 30 | 12.50 | True | 1.440 | 12.96 | 1,296,000.00 | 46,000.00 |
-| Baseline (Neutral) |60 | 12.50 | False | 1.000 | 12.95 | 1,295,000.00 | 45,000.00 |
-| Post-Policy Shock | 60 | 12.50 | True | 1.440 | 13.16 | 1,316,000.00 | 66,000.00 |
-| Baseline (Neutral) | 90 | 12.50 |False | 1.000 | 13.06 | 1,306,000.00 | 56,000.00 |
-| Post-Policy Shock | 90 | 12.50 | True | 1.440 | 13.31 | 1,331,000.00 | 81,000.00 |
+| Scenario Name | Horizon (Days) | Contract Amount (USD) | Spot Rate | Hawkish Signal | Volatility Multiplier | 95% VaR Rate | Recommended Hedged Cost (Bs) | Required Cash Reserve Buffer (Bs) |
+|-------|--------|-------|----|-----|----|----|-----|----| 
+| Baseline (Neutral/Routine) | 30 | $100,000 | 12.50 | False | 1.00 | 13.4293 | 1,342,929.90 | 92,929.90 |
+| Post-Policy Statement (High Hawkish Signal) | 30 | $100,000 | 12.50 | True | 1.44 | 13.8649 | 1,386,485.66 | 136,485.66 |
+| Baseline (Neutral/Routine) | 60 | $100,000 | 12.50 | False | 1.00 | 13.8334 | 1,383,339.73 | 133,339.73 |
+| Post-Policy Statement (High Hawkish Signal) | 60 | $100,000 | 12.50 | True | 1.44 | 14.4722 | 1,447,222.70 | 197,222.70 |
+| Baseline (Neutral/Routine) | 90 | $100,000 | 12.50 | False | 1.00 | 14.1721 | 1,417,206.98 | 167,206.98 |
+| Post-Policy Statement (High Hawkish Signal) | 90 | $100,000 | 12.50 | True | 1.44 | 14.9298 | 1,492,979.87 | 242,979.87 |
 
 * Key Takeaway: Under a high hawkish policy shock scenario over a 90-day settlement horizon, an SME importing $100,000 USD worth of goods must hold an additional Bs 81,000 in reserve above nominal cost (compared to Bs 56,000 under baseline conditions) to achieve 95% settlement certainty.
 
@@ -73,6 +73,8 @@ Run the modular pipeline sequentially:
 1. Scrape raw BCB press notes and download exchange rates
 python src/data_collection.py
 python src/add_manual_pdf.py
+python -m src.clean_communications
+python src/signal_classifier.py
 2. Run Zero-Shot NLP stance classification
 python src/signal_classifier.py
 3. Execute the econometric backtest
