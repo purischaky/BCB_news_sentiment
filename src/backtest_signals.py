@@ -1,77 +1,88 @@
 import json
 from pathlib import Path
-import pandas as pd
+
 import numpy as np
+import pandas as pd
 
-def run_signal_backtest():
-    print("Running Econometric Backtest: NLP Stance vs. FX Volatility...")
-    
-    # Load processed signals and exchange rate data
-    signals_path = Path("data/processed/processed_signals.json")
-    fx_path = Path("data/raw/official_exchange_rate.csv")
-    
-    if not signals_path.exists() or not fx_path.exists():
-        print("⚠ Required data files missing. Run data collection and classification first.")
+from src.fx_utils import FLEXIBLE_REGIME_START, load_fx_series
+
+SIGNALS_PATH = Path("data/processed/processed_signals.json")
+FX_PATH = Path("data/raw/official_exchange_rate.csv")
+OUTPUT_PATH = Path("outputs/reports/nlp_fx_backtest_summary.csv")
+
+PRE_DAYS = 20   # business-day returns ending on the event date
+POST_DAYS = 5   # business-day returns strictly after the event date
+
+def compute_event_volatility(fx: pd.DataFrame, event_date, pre_days: int = PRE_DAYS, post_days: int = POST_DAYS):
+    """
+    Volatility of returns before vs. after an event.
+    - pre window: the last `pre_days` returns up to and including the event date
+    - post window: the next `post_days` returns strictly after the event date
+    Returns None unless both windows are complete.
+    """
+    returns = fx["log_return"].dropna()
+    event_date = pd.Timestamp(event_date)
+
+    pre = returns[returns.index <= event_date].tail(pre_days)
+    post = returns[returns.index > event_date].head(post_days)
+    if len(pre) < pre_days or len(post) < post_days:
+        return None
+
+    pre_vol, post_vol = pre.std(), post.std()
+    ratio = np.log(post_vol / pre_vol) if pre_vol > 0 and post_vol > 0 else np.nan
+    return {"pre_vol": pre_vol, "post_vol": post_vol, "log_vol_ratio": ratio}
+
+def minimum_detectable_correlation(n: int) -> float:
+    """Smallest |r| detectable with 80% power at the 5% level (Fisher z approximation)."""
+    return float(np.tanh((1.96 + 0.84) / np.sqrt(n - 3)))
+
+def run_signal_backtest(
+    signals_path: Path = SIGNALS_PATH, fx_path: Path = FX_PATH, output_path: Path = OUTPUT_PATH
+):
+    print("Running event-study backtest: NLP signal vs. change in FX volatility...")
+    if not Path(signals_path).exists() or not Path(fx_path).exists():
+        print("Required data files missing. Run data collection and classification first.")
         return
-        
+
+    fx = load_fx_series(fx_path)
     with open(signals_path, "r", encoding="utf-8") as f:
-        signals = json.load(f)
-        
-    df_fx = pd.read_csv(fx_path)
-    df_fx["date"] = pd.to_datetime(df_fx["date"])
-    df_fx = df_fx.sort_values("date").set_index("date")
-    
-    # Calculate daily returns and rolling 5-day realized volatility
-    df_fx["daily_return"] = df_fx["value"].pct_change()
-    df_fx["realized_vol_5d"] = df_fx["daily_return"].rolling(window=5).std()
-    
-    # Merge signals with realized volatility over subsequent windows
-    df_signals = pd.DataFrame(signals)
-    df_signals["date"] = pd.to_datetime(df_signals["date"])
-    
-    merged_data = []
-    for _, sig in df_signals.iterrows():
-        sig_date = sig["date"]
-        
-        # Strict post-publication window: T+1 to T+5 trading days
-        future_window = df_fx.loc[df_fx.index > sig_date].head(5)
-        
-        if len(future_window) >= 3:
-            avg_future_vol = future_window["realized_vol_5d"].mean()
-            merged_data.append({
-                "date": sig_date,
-                "title": sig["title"],
-                "intensity_score": sig["intensity_score"],
-                "is_hawkish": sig["is_hawkish"],
-                "subsequent_fx_vol": avg_future_vol
-            })
-                
-    df_backtest = pd.DataFrame(merged_data).dropna()
-    
-    if df_backtest.empty:
-        print("⚠ Not enough overlapping date ranges found.")
+        signals = pd.DataFrame(json.load(f))
+    signals["date"] = pd.to_datetime(signals["date"])
+
+    # One observation per date. Several documents on the same date count once;
+    # the date's score is the maximum score among its documents.
+    events = signals.groupby("date").agg(
+        intensity_score=("intensity_score", "max"),
+        is_hawkish=("is_hawkish", "max"),
+        n_documents=("title", "count"),
+    ).reset_index()
+
+    rows = []
+    for _, ev in events.iterrows():
+        vol = compute_event_volatility(fx, ev["date"])
+        if vol is None:
+            continue
+        regime = "flexible" if ev["date"] >= FLEXIBLE_REGIME_START else "before_flexible"
+        rows.append({**ev.to_dict(), **vol, "policy_regime": regime})
+
+    df = pd.DataFrame(rows).dropna(subset=["log_vol_ratio"])
+    if df.empty:
+        print("Not enough overlapping data.")
         return
 
-    # Handle duplicate releases on the same date by aggregating (e.g., mean intensity per date)
-    df_distinct_events = df_backtest.groupby("date").agg({
-        "intensity_score": "max",
-        "is_hawkish": "max",
-        "subsequent_fx_vol": "mean"
-    }).reset_index()
-    
-    # Compute Pearson correlation to measure indicator strength
-    correlation = df_distinct_events["intensity_score"].corr(df_distinct_events["subsequent_fx_vol"])
-    print(f"\n✓ Revised Econometric Link Established:")
-    print(f"  - Total Raw Records: {len(df_backtest)}")
-    print(f"  - Distinct Event Dates: {len(df_distinct_events)}")
-    print(f"  - Pearson Correlation (Distinct Events): {correlation:.4f}")
-    
-    # Save backtest report
-    output_dir = Path("outputs/reports")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = output_dir / "nlp_fx_backtest_summary.csv"
-    df_distinct_events.to_csv(report_path, index=False)
-    print(f"  - Saved cleaned backtest summary to: {report_path}")
+    n = len(df)
+    pearson = df["intensity_score"].corr(df["log_vol_ratio"])
+    spearman = df["intensity_score"].corr(df["log_vol_ratio"], method="spearman")
+
+    print(f"\n  Event dates used (n): {n}   (of {len(events)} distinct dates)")
+    print(f"  Pearson r : {pearson:.4f}")
+    print(f"  Spearman  : {spearman:.4f}")
+    print(f"  Smallest |r| this sample could reliably detect: {minimum_detectable_correlation(n):.2f}")
+    print(df["policy_regime"].value_counts().to_string())
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(output_path, index=False)
+    print(f"  Saved: {output_path}")
 
 if __name__ == "__main__":
     run_signal_backtest()

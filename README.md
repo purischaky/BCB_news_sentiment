@@ -1,102 +1,133 @@
-## Central Bank Policy NLP & Exchange Rate Risk Engine
+## Central Bank Communications & Exchange-Rate Volatility: Bolivia (BCB)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## Executive Overview & Business Problem
-Under Bolivia's flexible exchange rate framework (Ministerial Resolution No. 245/2026 & BCB Board Resolution No. 142/2026), businesses importing goods under U.S. dollar contracts face foreign exchange risk. This repository provides an exploratory quantitative research pipeline designed to evaluate two core business questions:
+An exploratory pipeline that (1) collects Banco Central de Bolivia (BCB) press releases, (2) tags them with a zero-shot NLP classifier, (3) tests whether those tags are associated with changes in exchange-rate volatility around each announcement, and (4) turns observed volatility into scenario-based cash-reserve buffers for an SME importing under a USD contract. This repository provides an exploratory quantitative research pipeline designed to evaluate two core business questions:
 
-1. Signaling Power: How strong of an indicator is an official central bank policy communication regarding subsequent shifts in exchange rate volatility?
+1. Signaling: Are BCB communications, as tagged by a zero-shot classifier, associated with a change in exchange-rate volatility in the days after they are published?
 
-2. Contract Risk Translation: How can small and medium enterprises (SMEs) translate central bank policy signals and market uncertainty into Value-at-Risk (VaR) cash reserve buffers for USD-denominated contracts?
+2. Risk translation: Given observed volatility under the flexible regime, how large a cash buffer does an SME need to hold for a USD-denominated contract at 95% confidence, and how sensitive is that to a volatility shock?
+
+## Institutional context
+| Date | Event |
+|----|----|
+| Until 2026-06-28 | Fixed official rate (Bs 6.96 per USD, in place since 2011) |
+| 2026-06-29 | Flexible exchange-rate regime takes effect (Ministerial Resolution 245/2026 and BCB Board Resolution 88/2026) |
+| 2026-09-24 (published 09-25) | BCB Board Resolution 142/2026 repeals RD 88/2026 and issues an updated Reglamento de Operaciones Cambiarias |
+
+Under the new rules the official exchange rate (TCO) is the amount-weighted median of banks' USD purchase operations with clients and the BCB, excluding interbank trades, rounded to two decimals and published each business day at 23:30 for use the next day.
 
 ## Architecture & Data Pipeline
 ```text
 ├── data/
-│   ├── raw/                 
-│   └── processed/           
+│   ├── raw/          # scraped communications and exchange-rate snapshot
+│   └── processed/    # deduplicated documents and classifier output
+├── docs/             # data_notes.md: series definition and open questions
 ├── outputs/
-│   ├── figures/             
-│   └── reports/             
-├── src/
-└── tests/                   
+│   ├── figures/
+│   └── reports/
+├── scripts/          # one-off diagnostics and README table generator
+├── src/              # pipeline modules
+└── tests/                 
 ```
 
 ## Methodology & Model Mechanics
 
-### 1. Zero-Shot NLP Classification (src/signal_classifier.py)
-Official communications are evaluated using Hugging Face's MoritzLaurer/mDeBERTa-v3-base-mnli-xnli model across candidate policy labels:
-    - restricción de divisas o control de cambios
-    - ajuste de política monetaria o régimen cambiario
-    - estabilidad de reservas y liquidez
-    - comunicado administrativo o rutinario
+### 1. NLP tagging (src/signal_classifier.py)
+The model MoritzLaurer/mDeBERTa-v3-base-mnli-xnli assigns each text chunk to one of four candidate topics (restriction of currency / exchange controls; monetary or exchange-regime adjustment; reserves and liquidity stability; administrative or routine). For each document the field intensity_score is the maximum zero-shot confidence over chunks.
 
-Classifier Mechanics: Documents are processed in chunked segments to fit model context windows. The classifier identifies the top-ranked label and its associated zero-shot confidence score. In the codebase, this metric is stored as the intensity_score field; however, it should be interpreted strictly as an exploratory policy-signal score (a relative confidence metric from the NLP model), not a calibrated macroeconomic measurement. A document is classified as hawkish / restrictive (is_hawkish = True) if this policy-signal score is $\ge 0.50$ and the top label explicitly contains restriction or adjustment keywords (restricción or ajuste).
+### 2. Event study (src/backtest_signals.py). 
+For each event date T:
+- Pre window: the 20 business-day log returns ending on T.
+- Post window: the 5 business-day log returns strictly after T (both windows must be complete).
+- Outcome: log(post-window volatility / pre-window volatility).
+- Several documents on the same date count as one event, using the maximum score.
 
-### 2. Econometric Backtesting (src/backtest_signals.py)
-To test the empirical relationship between policy statements and exchange rate dynamics, the backtesting module measures realized volatility over strict post-publication trading days ($T+1$ to $T+5$).
-    - Event Aggregation: When multiple press releases occur on the same calendar date, events are aggregated at the distinct date level to prevent duplicate observation bias.
-    - Empirical Findings: Across 41 event dates, the correlation between the classifier score and subsequent exchange-rate volatility was approximately −0.104. This is a weak association in this sample and should be treated as exploratory.
-    - Economic Interpretation: Official central bank statements operate primarily as administrative guidance rather than immediate short-term market volatility shocks.
+Measuring volatility relative to its own recent level avoids comparing calm and turbulent periods directly. Windows were fixed before looking at results.
 
-### 3. Scenario-Based Risk Simulation (src/monte_carlo.py)
-Because empirical backtesting shows near-zero short-term volatility correlation, the Monte Carlo simulation engine is treated strictly as an illustrative scenario analysis rather than a fitted predictive model.
-    - Simulation Framework: Uses Geometric Brownian Motion (GBM) over 30, 60, and 90-day horizons for a standard $100,000 USD SME import contract.
-    - Scenario Uplift: Compares a baseline neutral volatility scenario against a hypothetical policy shock scenario (applying an illustrative +44% volatility multiplier) to compute 95% and 99% Value-at-Risk (VaR) cash reserve buffers.
+### 3. Robustness (src/robustness.py)
+Fisher confidence intervals, a permutation p-value (10,000 shuffles), Spearman correlation, leave-one-out ranges, and splits by regime. The exclusion of Nov 2025 to Jan 2026 was chosen after inspecting the exchange-rate plot, so it is a sensitivity check, not a primary test.
 
-## Empirical Results & Backtesting
+### 4. Scenario simulation (src/monte_carlo.py)
+Geometric Brownian motion with zero drift and 10,000 paths. Spot is the last observed value (Bs 11.84) and daily volatility (1.99%) is estimated from log returns since 2026-06-29. Horizons are in business days. Stress scenarios multiply volatility by 1.5 and 2.0; these multipliers are illustrative and are not estimated from the NLP signal.
 
-1. Signaling Power (NLP Stance vs. FX Volatility)
-- Pearson Correlation: $r \approx -0.104$ (across 41 distinct event dates)
-- Interpretation: The empirical correlation between the NLP-derived policy-signal scores (intensity_score) and subsequent 5-day exchange rate volatility is near zero. This indicates that official central bank statements in managed flexible regimes act primarily as administrative guidance and anchoring signals rather than drivers of immediate short-term market shocks.
+## Results
 
-2. SME Executive Risk Matrix ($100,000 USD Import Contract)Below is an excerpt from outputs/reports/sme_contract_risk_matrix.csv:
+### 1. Is the NLP score associated with volatility around announcements?
 
-| Scenario Name | Horizon (Days) | Spot Rate (Bs/USD) | NLP Hawkish Signal | Volatility Multiplier | 95% VaR Rate (Bs/USD) | Recommended Hedged Cost (Bs) | Required Reserve Buffer (Bs) | 
-|-------------|-------|-------|------|------|---------|------|---------|
-| Baseline (Neutral) | 30 | 12.50 | False | 1.000 | 12.82 | 1,282,000.00 | 32,000.00 |
-| Post-Policy Shock | 30 | 12.50 | True | 1.440 | 12.96 | 1,296,000.00 | 46,000.00 |
-| Baseline (Neutral) |60 | 12.50 | False | 1.000 | 12.95 | 1,295,000.00 | 45,000.00 |
-| Post-Policy Shock | 60 | 12.50 | True | 1.440 | 13.16 | 1,316,000.00 | 66,000.00 |
-| Baseline (Neutral) | 90 | 12.50 |False | 1.000 | 13.06 | 1,306,000.00 | 56,000.00 |
-| Post-Policy Shock | 90 | 12.50 | True | 1.440 | 13.31 | 1,331,000.00 | 81,000.00 |
+NLP confidence vs change in FX volatility
+| Sample | n | Pearson r | 95% CI | Permutation p |
+| --- | --- | --- | --- | --- |
+| full sample | 41 | 0.306 | [-0.002, 0.561] | 0.05 |
+| before flexible regime | 30 | 0.305 | [-0.062, 0.6] | 0.104 |
+| flexible regime | 11 | 0.432 | [-0.226, 0.82] | 0.196 |
+| excluding Nov25-Jan26 | 26 | 0.175 | [-0.228, 0.527] | 0.398 |
 
-* Key Takeaway: Under a high hawkish policy shock scenario over a 90-day settlement horizon, an SME importing $100,000 USD worth of goods must hold an additional Bs 81,000 in reserve above nominal cost (compared to Bs 56,000 under baseline conditions) to achieve 95% settlement certainty.
+Spearman correlation on the full sample is 0.22.
 
-## Installation & Execution Guide
-### 1. Environment Setup
-Clone the repository and install requirements.
+Reading: a weak positive association that sits right at the edge of conventional significance and weakens when the period with the noisiest exchange-rate data is removed (15 of the 41 events fall in it). The flexible-regime result (r = 0.43) rests on 11 events and its interval spans −0.23 to 0.82, so it supports no conclusion. Even a real association would not be causal: the BCB may publish more exchange-rate material when markets are already turbulent.
 
-### 2. Running the Analytical Pipeline
-Run the modular pipeline sequentially:
-1. Scrape raw BCB press notes and download exchange rates
-python src/data_collection.py
-python src/add_manual_pdf.py
-2. Run Zero-Shot NLP stance classification
-python src/signal_classifier.py
-3. Execute the econometric backtest
-python src/backtest_signals.py
-4. Generate Monte Carlo scenario simulations
-python src/monte_carlo.py
-5. Output figures and visualizations
-python src/visualize_results.py
+Topic labels across the 42 documents: 18 reserves and liquidity, 12 regime adjustment, 6 routine, 6 currency restriction.
 
-### 3. Running Unit Tests
-Validate code functionality and numerical constraints:
+### 2. SME cash-reserve buffers (USD 100,000 contract, spot Bs 11.84)
+Simulated exchange-rate distribution
+
+| Scenario | Horizon (business days) | Daily volatility | 95% VaR rate (Bs/USD) | Required buffer (Bs) |
+| --- | --- | --- | --- | --- |
+| Baseline (observed flexible-regime volatility) | 30 | 1.99% | 14.16 | 232,350 |
+| Stress x1.5 (illustrative) | 30 | 2.99% | 15.49 | 365,102 |
+| Stress x2.0 (illustrative) | 30 | 3.98% | 16.94 | 510,297 |
+| Baseline (observed flexible-regime volatility) | 60 | 1.99% | 15.23 | 339,050 |
+| Stress x1.5 (illustrative) | 60 | 2.99% | 17.27 | 543,410 |
+| Stress x2.0 (illustrative) | 60 | 3.98% | 19.59 | 775,190 |
+| Baseline (observed flexible-regime volatility) | 90 | 1.99% | 16.11 | 426,512 |
+| Stress x1.5 (illustrative) | 90 | 2.99% | 18.78 | 694,321 |
+| Stress x2.0 (illustrative) | 90 | 3.98% | 21.91 | 1,006,665 |
+
+* The buffer is the 95th-percentile terminal rate times the contract amount, minus the cost at spot. Read these numbers as a conservative upper bound from a simple model, not as a forecast: constant 2% daily volatility compounding without mean reversion or policy intervention produces wide distributions (the simulated lower tail even falls below the former fixed rate)..
+
+## Limitations
+* Small sample and low power. 41 events can only detect |r| ≥ 0.43 (80% power, 5% level). The flexible-regime subsample has 11 events.
+* The NLP score is not a stance measure. It is a topic classifier's confidence, unvalidated against human labels. Validating it is the most valuable next step.
+* Two different series are pooled. Before 2026-06-29 the exchange-rate series is not the official rate and its definition is unverified.
+* Suspect data period. Between about November 2025 and January 2026 the series shows daily moves of 10% to 24% whose origin is unclear. Results are shown with and without it.
+* A median is smoother than a market quote. The TCO is a weighted median of bank purchases, which understates short-term volatility, so "no reaction" findings may partly reflect the instrument.
+* Timing conventions are unconfirmed. Whether Fecha is the date a rate applies or the date it is published could shift windows by one day. Holidays may repeat the previous value.
+Possible confounding and reverse causality. Announcements cluster in turbulent periods.
+* Three regimes, not two. Events after 2026-09-25 fall under RD 142/2026; there are too few to analyze separately.
+* Monte Carlo is a scenario tool. Zero drift, normally distributed returns, volatility from about 85 business days that include an unusual spike in September 2026, and horizons counted in business days (a 30-calendar-day contract is about 21 business days).
+* Multiple comparisons. Four samples are reported; a borderline result in one of them should not be read as a discovery.
+
+
+## How to reproduce
+```
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1      Mac/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+
+# Optional: refresh the data. This scrapes the live BCB site and will change results.
+# python -m src.data_collection
+# python -m src.add_manual_pdf
+
+python -m src.clean_communications     # deduplicate documents
+python -m src.signal_classifier        # zero-shot tagging (downloads the model on first run)
+python -m src.backtest_signals         # event study
+python -m src.robustness               # CIs, permutation test, regime splits
+python -m src.monte_carlo              # SME risk matrix
+python -m src.visualize_results        # figures
+python scripts/make_readme_tables.py   # tables used in this README
+
 pytest -v
+```
 
 ## Engineering Approach & AI Disclosure
-- Domain Modeling & System Architecture: Human engineering defined the core business problem, regulatory context (RM 245/2026 & RD 142/2026), quantitative scenario design, and backtest specifications.
-- AI Collaboration: AI tools were utilized to assist in drafting boilerplate web scraping handlers, configuring Hugging Face zero-shot pipelines, refining Seaborn styling parameters, and structuring test coverage.
-- Validation & Character Encoding: All source files, CSV reports, and Markdown documentations are encoded in UTF-8 without BOM to preserve proper rendering of Spanish characters and mathematical notation.
+- Human-defined: the research question, institutional context, scenario design, event-study specification, and interpretation of results.
+- AI-assisted: drafting of scraping and classification boilerplate, plotting styles, test scaffolding, an audit of v0.1, and step-by-step guidance through the v0.2 fixes. All code was run and all numbers reproduced locally; the audit's claims were checked against the data before being acted on.
+- Encoding: files are UTF-8 to preserve Spanish characters
 
-## Data Snapshot & Temporal Disclaimer
-The datasets included in this repository (`data/raw/` and `data/processed/`) represent a **static snapshot of the Bolivian macroeconomic environment and central bank communications as of October 21, 2026**. 
+## Disclaimer
+This is an exploratory, educational and portfolio project. It is not financial advice and does not guarantee future market behavior. Results are tied to the 2026-10-23 data snapshot.
 
-Because this project relies on live web scraping from the Central Bank of Bolivia (BCB), running the data collection pipeline (`src/data_collection.py`) at a later date will automatically ingest newer communications and exchange rate data. 
-
-**Please note the following when reproducing this analysis:**
-* **Dynamic Market Conditions:** Financial markets and central bank policies are highly dynamic. Running this pipeline with post-October 2026 data may yield different NLP signal distributions, backtesting correlations, and Monte Carlo volatility parameters.
-* **Reproducibility:** The empirical results, scatter plots, and risk matrices documented in this README are strictly tied to the provided historical snapshot. This ensures the reproducibility of the Q3 2026 analysis, regardless of when the repository is cloned.
-* **No Forward-Looking Guarantee:** The Monte Carlo simulations and NLP classifications are intended for exploratory, educational, and portfolio demonstration purposes only. They do not constitute financial advice or guarantee future market behavior.

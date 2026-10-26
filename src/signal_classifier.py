@@ -3,14 +3,23 @@ from pathlib import Path
 from transformers import pipeline
 
 # Configuration & Paths 
-DATA_RAW_PATH = Path("data/raw/raw_communications.json")
+INPUT_PATH = Path("data/processed/communications_clean.json")
 DATA_PROCESSED_DIR = Path("data/processed")
 DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 class BCBSignalClassifier:
     """
-    NLP Signal Classifier for Central Bank Communications.
-    Uses Zero-Shot Classification to quantify policy stance and intensity.
+    Zero-shot TOPIC classifier for BCB communications.
+
+    This does NOT measure policy stance or intensity:
+    - `stance_label`: the topic label with the highest zero-shot score in any chunk.
+    - `intensity_score`: the classifier's confidence in that label (0 to 1), the maximum over
+      chunks. It is not calibrated and tends to be higher for longer documents.
+    - `is_hawkish`: True when that confidence is >= 0.50 and the label is the "restricción" or
+      "ajuste" topic. It flags restriction-related TOPICS, not a tightening direction.
+
+    Field names are kept for compatibility with saved data.
+    Validated against human labels: not yet.
     """
 
     def __init__(self, model_name: str = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"):
@@ -83,7 +92,7 @@ class BCBSignalClassifier:
         }
 
 def process_raw_communications(
-    input_path: Path = DATA_RAW_PATH, 
+    input_path: Path = INPUT_PATH, 
     output_filename: str = "processed_signals.json"
 ) -> Path:
     """
@@ -91,7 +100,7 @@ def process_raw_communications(
     and saves the enriched dataset to data/processed/.
     """
     if not input_path.exists():
-        raise FileNotFoundError(f"Input file not found at {input_path}. Run src/data_collection.py first.")
+        raise FileNotFoundError(f"Input file not found at {input_path}. Run python -m src.clean_communications first.")
 
     print(f"Reading raw data from {input_path}...")
     with open(input_path, "r", encoding="utf-8") as f:
