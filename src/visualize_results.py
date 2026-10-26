@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from src.monte_carlo import MonteCarloRiskEngine, SMEContractParameters, estimate_flexible_regime_inputs
 
 # Set publication-quality style
 sns.set_theme(style="whitegrid", palette="muted")
@@ -17,44 +18,34 @@ OUTPUTS_FIGURES_DIR = Path("outputs/figures")
 OUTPUTS_FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
 def plot_monte_carlo_density_distributions(
-    spot_rate: float = 12.50,
     horizon_days: int = 60,
-    base_daily_vol: float = 0.008,
+    stress_multiplier: float = 1.5,
     num_simulations: int = 10_000,
     output_filename: str = "monte_carlo_fx_density.png"
 ) -> Path:
-    """
-    Generates a KDE density plot comparing FX rate distributions under 
-    Baseline (Neutral) vs. Hawkish Policy Shock scenarios.
-    """
-    np.random.seed(42)
+    """Density of simulated exchange rates: baseline vs. an illustrative volatility stress."""
+    spot, daily_vol = estimate_flexible_regime_inputs()
+    params = SMEContractParameters(100_000.0, horizon_days, spot, daily_vol)
+    engine = MonteCarloRiskEngine()
 
-    # Scenarios setup
-    vol_neutral = base_daily_vol * 1.0
-    vol_hawkish = base_daily_vol * 1.44  # ~0.88 hawkish score multiplier
+    rates_base = engine.simulate_terminal_rates(params, 1.0, num_simulations)
+    rates_stress = engine.simulate_terminal_rates(params, stress_multiplier, num_simulations)
+    var95_base = np.percentile(rates_base, 95)
+    var95_stress = np.percentile(rates_stress, 95)
 
-    # Simulate terminal exchange rate distributions (GBM)
-    returns_neutral = np.random.normal(0, vol_neutral * np.sqrt(horizon_days), num_simulations)
-    returns_hawkish = np.random.normal(0, vol_hawkish * np.sqrt(horizon_days), num_simulations)
-
-    rates_neutral = spot_rate * np.exp(returns_neutral)
-    rates_hawkish = spot_rate * np.exp(returns_hawkish)
-
-    var95_neutral = np.percentile(rates_neutral, 95)
-    var95_hawkish = np.percentile(rates_hawkish, 95)
-
-    # Plotting
     fig, ax = plt.subplots(figsize=(10, 6))
+    sns.kdeplot(rates_base, ax=ax, label="Baseline volatility", color="#2b5c8f", fill=True, alpha=0.3)
+    sns.kdeplot(rates_stress, ax=ax, label=f"Stress x{stress_multiplier} volatility (illustrative)",
+                color="#d95f02", fill=True, alpha=0.3)
+    ax.axvline(var95_base, color="#2b5c8f", linestyle="--", linewidth=1.8,
+               label=f"Baseline 95% VaR: {var95_base:.2f} Bs/USD")
+    ax.axvline(var95_stress, color="#d95f02", linestyle="--", linewidth=1.8,
+               label=f"Stress 95% VaR: {var95_stress:.2f} Bs/USD")
 
-    sns.kdeplot(rates_neutral, ax=ax, label="Baseline (Neutral / Routine)", color="#2b5c8f", fill=True, alpha=0.3)
-    sns.kdeplot(rates_hawkish, ax=ax, label="Hawkish Policy Shock (High FX Control Risk)", color="#d95f02", fill=True, alpha=0.3)
-
-    # Value at Risk Vertical Lines
-    ax.axvline(var95_neutral, color="#2b5c8f", linestyle="--", linewidth=1.8, label=f"Baseline 95% VaR: {var95_neutral:.2f} Bs/USD")
-    ax.axvline(var95_hawkish, color="#d95f02", linestyle="--", linewidth=1.8, label=f"Hawkish 95% VaR: {var95_hawkish:.2f} Bs/USD")
-
-    ax.set_title(f"Monte Carlo Exchange Rate Density Projection ({horizon_days}-Day Horizon)\nRegulatory Context: RM 245/2026 & BCB RD 142/2026", fontsize=12, fontweight="bold", pad=12)
-    ax.set_xlabel("Projected Parallel Exchange Rate (Bs / USD)", fontsize=11)
+    ax.set_title(f"Simulated Exchange Rate Distribution ({horizon_days}-Day Horizon)\n"
+                 f"Spot {spot:.2f}, daily volatility {daily_vol:.2%} (flexible-regime calibration)",
+                 fontsize=12, fontweight="bold", pad=12)
+    ax.set_xlabel("Simulated exchange rate (Bs / USD)", fontsize=11)
     ax.set_ylabel("Probability Density", fontsize=11)
     ax.legend(loc="upper right", frameon=True)
 
@@ -62,7 +53,6 @@ def plot_monte_carlo_density_distributions(
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
-
     print(f"  ✓ Saved density plot to: {output_path}")
     return output_path
 
@@ -122,29 +112,35 @@ def plot_nlp_vs_fx_volatility(
     output_filename: str = "nlp_vs_fx_correlation.png"
 ) -> Path:
     """
-    Generates a regression scatter plot linking NLP hawkish intensity scores 
-    to subsequent exchange rate volatility based on econometric backtest results.
+    Scatter of NLP classifier confidence vs. the change in FX volatility around each
+    announcement, log(post-event vol / pre-event vol). Exploratory, not a predictive test.
     """
     if not input_path.exists():
         print(f"  ⚠ Skipping NLP vs FX correlation plot: {input_path} not found.")
         return input_path
 
     df = pd.read_csv(input_path)
+    r = df["intensity_score"].corr(df["log_vol_ratio"])
+
     fig, ax = plt.subplots(figsize=(8, 5))
-    
     sns.regplot(
         data=df,
         x="intensity_score",
-        y="subsequent_fx_vol",
+        y="log_vol_ratio",
         ax=ax,
         color="#2b5c8f",
         scatter_kws={"alpha": 0.7},
         line_kws={"color": "#d95f02"}
     )
-    
-    ax.set_title("Predictive Power of BCB Communications:\nNLP Intensity vs. Subsequent 5-Day Exchange Rate Volatility", fontsize=11, fontweight="bold", pad=12)
-    ax.set_xlabel("NLP Hawkish Intensity Score", fontsize=10)
-    ax.set_ylabel("Realized FX Volatility (5-Day Window)", fontsize=10)
+    ax.axhline(0, color="gray", linewidth=0.8, linestyle=":")
+
+    ax.set_title(
+        "NLP Classifier Confidence vs. Change in FX Volatility Around Announcements\n"
+        f"Exploratory: n = {len(df)}, Pearson r = {r:.2f} (CI includes zero)",
+        fontsize=11, fontweight="bold", pad=12
+    )
+    ax.set_xlabel("NLP classifier confidence (max zero-shot score)", fontsize=10)
+    ax.set_ylabel("log(post-event vol / pre-event vol)", fontsize=10)
 
     output_path = OUTPUTS_FIGURES_DIR / output_filename
     plt.tight_layout()
