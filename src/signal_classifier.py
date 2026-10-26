@@ -9,8 +9,17 @@ DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 class BCBSignalClassifier:
     """
-    NLP Signal Classifier for Central Bank Communications.
-    Uses Zero-Shot Classification to quantify policy stance and intensity.
+    Zero-shot TOPIC classifier for BCB communications.
+
+    This does NOT measure policy stance or intensity:
+    - `stance_label`: the topic label with the highest zero-shot score in any chunk.
+    - `intensity_score`: the classifier's confidence in that label (0 to 1), the maximum over
+      chunks. It is not calibrated and tends to be higher for longer documents.
+    - `is_hawkish`: True when that confidence is >= 0.50 and the label is the "restricción" or
+      "ajuste" topic. It flags restriction-related TOPICS, not a tightening direction.
+
+    Field names are kept for compatibility with saved data.
+    Validated against human labels: not yet.
     """
 
     def __init__(self, model_name: str = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"):

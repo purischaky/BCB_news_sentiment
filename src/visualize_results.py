@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from src.monte_carlo import MonteCarloRiskEngine, SMEContractParameters, estimate_flexible_regime_inputs
+from src.stats_utils import fisher_ci
 
 # Set publication-quality style
 sns.set_theme(style="whitegrid", palette="muted")
@@ -83,9 +84,9 @@ def plot_nlp_signal_distribution(
         ax=ax
     )
 
-    ax.set_title("Distribution of BCB Official Statements by Stance Class", fontsize=12, fontweight="bold", pad=12)
-    ax.set_xlabel("Number of Statements Processed", fontsize=11)
-    ax.set_ylabel("Policy Stance Category", fontsize=11)
+    ax.set_title(f"BCB Communications by Zero-Shot Topic Label ((n = {len(df)}))", fontsize=12, fontweight="bold", pad=12)
+    ax.set_xlabel("Number of documents", fontsize=11)
+    ax.set_ylabel("Topic label (not a validated stance measure)", fontsize=11)
 
     for bar in bars.patches:
         width = bar.get_width()
@@ -120,7 +121,8 @@ def plot_nlp_vs_fx_volatility(
         return input_path
 
     df = pd.read_csv(input_path)
-    r = df["intensity_score"].corr(df["log_vol_ratio"])
+    r = df["intensity_score"].corr(df["log_vol_ratio"])  
+    ci_low, ci_high = fisher_ci(r, len(df))
 
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.regplot(
@@ -136,8 +138,7 @@ def plot_nlp_vs_fx_volatility(
 
     ax.set_title(
         "NLP Classifier Confidence vs. Change in FX Volatility Around Announcements\n"
-        f"Exploratory: n = {len(df)}, Pearson r = {r:.2f} (CI includes zero)",
-        fontsize=11, fontweight="bold", pad=12
+        f"Exploratory: n = {len(df)}, Pearson r = {r:.2f}, 95% CI [{ci_low:.2f}, {ci_high:.2f}]",
     )
     ax.set_xlabel("NLP classifier confidence (max zero-shot score)", fontsize=10)
     ax.set_ylabel("log(post-event vol / pre-event vol)", fontsize=10)
